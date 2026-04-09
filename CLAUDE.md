@@ -126,23 +126,23 @@ This is the build roadmap. Pick up the next incomplete task. Mark done by changi
 - [x] Test: `pytest tests/test_scanner.py` — scanner outputs ranked candidates
 
 ### Phase 2: Intelligence
-- [ ] Build `sentiment.py` — LunarCrush sentiment check (primary), Claude Haiku backup
-- [ ] Build `risk_manager.py` — position sizing, exposure checks, all circuit breakers
-- [ ] Wire pipeline: scanner → sentiment → risk → signal output
-- [ ] Test: `pytest tests/test_sentiment.py tests/test_risk_manager.py`
+- [x] Build `sentiment.py` — LunarCrush sentiment check (primary), Claude Haiku backup
+- [x] Build `risk_manager.py` — position sizing, exposure checks, all circuit breakers
+- [x] Wire pipeline: scanner → sentiment → risk → signal output
+- [x] Test: `pytest tests/test_sentiment.py tests/test_risk_manager.py`
 
 ### Phase 3: Execution
-- [ ] Build `executor.py` — Alpaca limit orders, stop-loss placement, order cancellation
-- [ ] Build `portfolio.py` — open positions, unrealized P&L, performance metrics
-- [ ] Build exit logic — stops, trailing, profit target, sentiment reversal, time exit
-- [ ] Build `logger.py` — JSON trade log, daily summary CSV, decision rationale
-- [ ] Test: `pytest tests/test_executor.py` — paper trades execute end-to-end
+- [x] Build `executor.py` — Alpaca limit orders, stop-loss placement, order cancellation
+- [x] Build `portfolio.py` — open positions, unrealized P&L, performance metrics
+- [x] Build exit logic — stops, trailing, profit target, sentiment reversal, time exit
+- [x] Build `logger.py` — JSON trade log, daily summary CSV, decision rationale
+- [x] Test: `pytest tests/test_executor.py` — paper trades execute end-to-end
 
 ### Phase 4: Automation
-- [ ] Build `main.py` — APScheduler loop, market hours detection, pre-market universe refresh
-- [ ] Add circuit breakers to main loop (daily/weekly loss halt, API-down halt)
-- [ ] Add error handling, retry logic, graceful degradation for all 3 APIs
-- [ ] Test: bot runs autonomously through a full paper trading day
+- [x] Build `main.py` — APScheduler loop, market hours detection, pre-market universe refresh
+- [x] Add circuit breakers to main loop (daily/weekly loss halt, API-down halt)
+- [x] Add error handling, retry logic, graceful degradation for all 3 APIs
+- [x] Test: bot runs autonomously through a full paper trading day
 
 ### Phase 5: Paper Validation (2-4 weeks)
 - [ ] Run on paper for 10+ trading days

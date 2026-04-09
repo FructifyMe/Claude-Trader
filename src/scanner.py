@@ -182,7 +182,7 @@ class Scanner:
             "symbol": symbol,
             "score": round(total, 1),
             "components": components,
-            "passes_threshold": total >= cfg["score_threshold"],
+            "passes_threshold": bool(total >= cfg["score_threshold"]),
         }
 
     def scan_watchlist(self) -> list[dict]:
