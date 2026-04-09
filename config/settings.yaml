@@ -1,0 +1,89 @@
+# ============================================================
+# Auto-Trader Bot Configuration
+# Change these without touching code. Bot reads on startup.
+# ============================================================
+
+strategy:
+  # --- Universe Filter (daily pre-market) ---
+  universe:
+    min_market_cap: 2_000_000_000    # $2B minimum
+    min_avg_volume: 1_000_000        # 1M shares/day
+    min_price: 5.0                   # Avoid penny stocks
+    max_price: 500.0                 # Tradeable range for $1K
+    galaxy_score_min: 50             # LunarCrush social health floor
+    earnings_exclusion_days: 2       # Skip stocks reporting within N days
+    max_universe_size: 50            # Cap watchlist to top N candidates
+
+  # --- Momentum Scoring ---
+  momentum:
+    sma_period: 20
+    rsi_period: 14
+    rsi_min: 50                      # Trending (not oversold)
+    rsi_max: 70                      # Not overbought
+    volume_surge_multiplier: 1.5     # Current vol vs 20-day avg
+    social_volume_surge_multiplier: 2.0  # LC social vol vs 7-day avg
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    momentum_lookback_days: 5
+    score_threshold: 70              # Minimum score to pass to sentiment
+
+    # Weights (must sum to 1.0)
+    weights:
+      sma: 0.20
+      rsi: 0.15
+      volume: 0.20
+      macd: 0.10
+      price_momentum: 0.10
+      social_volume: 0.15
+      sentiment_shift: 0.10
+
+  # --- Sentiment Confirmation ---
+  sentiment:
+    # LunarCrush (primary)
+    lunarcrush_galaxy_min: 60
+    lunarcrush_sentiment: "bullish"  # Required sentiment direction
+    social_volume_trend: "rising"    # Social volume must be increasing
+
+    # Claude Haiku (backup — only used when LC signals are mixed)
+    claude_model: "claude-haiku-4-5-20251001"
+    claude_confidence_min: 7         # 1-10 scale
+    claude_max_tokens: 200           # Keep responses tiny
+
+  # --- Exit Rules ---
+  exits:
+    stop_loss_pct: 0.05              # -5% from entry
+    trailing_stop_pct: 0.03          # -3% from high water mark
+    profit_target_pct: 0.10          # +10% → sell half, trail rest
+    max_hold_days: 5                 # Re-evaluate after 5 days
+    sentiment_reversal_exit: true    # Sell if LC flips bearish
+
+# ============================================================
+# Risk Management (HARD LIMITS — code should enforce, not suggest)
+# ============================================================
+risk:
+  max_position_pct: 0.20            # Max 20% of portfolio per position
+  max_open_positions: 5             # Max simultaneous positions
+  max_daily_loss_pct: 0.03          # -3% daily → halt trading
+  max_weekly_loss_pct: 0.07         # -7% weekly → halt until Monday
+  max_per_trade_risk_pct: 0.01      # Risk $10 per trade on $1K
+  min_cash_reserve_pct: 0.10        # Always keep 10% cash
+
+# ============================================================
+# Schedule
+# ============================================================
+schedule:
+  scan_interval_minutes: 5
+  universe_refresh_time: "09:25"    # Pre-market universe build
+  market_open: "09:45"              # Skip first 15 min
+  market_close: "15:45"             # Skip last 15 min
+  timezone: "US/Eastern"
+
+# ============================================================
+# Logging
+# ============================================================
+logging:
+  trade_log_path: "data/trades.json"
+  daily_summary_path: "data/daily_summary"
+  log_level: "INFO"                 # DEBUG for development, INFO for production
+  log_decisions: true               # Log every skip/entry/exit with rationale

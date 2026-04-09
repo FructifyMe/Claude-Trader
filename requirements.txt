@@ -1,0 +1,24 @@
+# Auto-Trader Bot Dependencies
+# Install: pip install -r requirements.txt
+
+# Brokerage + Market Data
+alpaca-py>=0.21.0          # Alpaca trading + data SDK
+
+# Data & Analysis
+pandas>=2.0.0              # DataFrames, time series
+ta>=0.11.0                 # Technical indicators (RSI, MACD, Bollinger, SMA)
+numpy>=1.24.0              # Numerical operations
+
+# AI / Sentiment
+anthropic>=0.40.0          # Claude Haiku for backup sentiment
+httpx>=0.27.0              # HTTP client for Massive + LunarCrush APIs
+pytz>=2024.1               # Timezone support (alpaca-py dependency)
+
+# Scheduling & Config
+APScheduler>=3.10.0        # Market hours scheduling
+python-dotenv>=1.0.0       # Load .env secrets
+pyyaml>=6.0                # settings.yaml parsing
+
+# Testing
+pytest>=8.0.0              # Test runner
+pytest-asyncio>=0.23.0     # Async test support

@@ -1,0 +1,32 @@
+# Secrets
+config/.env
+.env
+env.template
+
+# Duplicate config
+/settings.yaml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Runtime data (regenerated)
+data/trades.json
+data/daily_summary/
+data/watchlist.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
