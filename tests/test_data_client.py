@@ -16,46 +16,83 @@ def mock_env(monkeypatch):
     monkeypatch.setenv("ANTHROPIC_API_KEY", "test_anthropic")
 
 
-class TestMassiveClient:
-    @patch("src.data_client.httpx.Client")
-    def test_screen_stocks(self, mock_httpx, mock_env):
-        from src.data_client import MassiveClient
+class TestMarketScreener:
+    def test_screen_stocks_finviz_plus_alpaca(self, mock_env):
+        from src.data_client import MarketScreener
 
-        mock_resp = MagicMock()
-        mock_resp.json.return_value = {
-            "results": [
-                {"symbol": "AAPL", "market_cap": 3e12, "avg_volume": 50e6, "price": 180},
-                {"symbol": "MSFT", "market_cap": 2.5e12, "avg_volume": 30e6, "price": 400},
-            ]
+        mock_alpaca = MagicMock()
+
+        # Mock Alpaca quote validation
+        mock_quote_aapl = MagicMock()
+        mock_quote_aapl.bid_price = 179.5
+        mock_quote_aapl.ask_price = 180.5
+        mock_quote_msft = MagicMock()
+        mock_quote_msft.bid_price = 399.0
+        mock_quote_msft.ask_price = 401.0
+        mock_alpaca.data.get_stock_latest_quote.return_value = {
+            "AAPL": mock_quote_aapl,
+            "MSFT": mock_quote_msft,
         }
-        mock_resp.raise_for_status = MagicMock()
-        mock_httpx.return_value.get.return_value = mock_resp
 
-        client = MassiveClient()
-        results = client.screen_stocks(min_market_cap=2e9, min_volume=1e6)
-
-        assert len(results) == 2
-        assert results[0]["symbol"] == "AAPL"
-
-    @patch("src.data_client.httpx.Client")
-    def test_get_bars(self, mock_httpx, mock_env):
-        from src.data_client import MassiveClient
-
-        mock_resp = MagicMock()
-        mock_resp.json.return_value = {
-            "bars": [
-                {"t": "2026-04-01T00:00:00Z", "o": 100, "h": 105, "l": 99, "c": 103, "v": 1000000},
-                {"t": "2026-04-02T00:00:00Z", "o": 103, "h": 107, "l": 102, "c": 106, "v": 1200000},
-            ]
+        screener = MarketScreener(mock_alpaca)
+        # Pre-fill the Finviz cache to avoid real web calls
+        screener._finviz_cache = {
+            "unusual_volume": [
+                {"Ticker": "AAPL", "Company": "Apple", "Sector": "Technology",
+                 "Market Cap": 3e12, "Volume": 50e6, "Change": 0.02},
+                {"Ticker": "MSFT", "Company": "Microsoft", "Sector": "Technology",
+                 "Market Cap": 2.5e12, "Volume": 30e6, "Change": 0.01},
+            ],
+            "top_gainers": [
+                {"Ticker": "AAPL", "Company": "Apple", "Sector": "Technology",
+                 "Market Cap": 3e12, "Volume": 50e6, "Change": 0.05},
+            ],
         }
-        mock_resp.raise_for_status = MagicMock()
-        mock_httpx.return_value.get.return_value = mock_resp
+        screener._cache_time = datetime.now()  # mark cache as fresh
 
-        client = MassiveClient()
-        df = client.get_bars("AAPL")
+        results = screener.screen_stocks()
+        symbols = [r["symbol"] for r in results]
+        assert "AAPL" in symbols
+        assert "MSFT" in symbols
+        # AAPL appears in 2 screens, should have source_count=2
+        aapl = next(r for r in results if r["symbol"] == "AAPL")
+        assert aapl["source_count"] == 2
 
-        assert len(df) == 2
-        assert "c" in df.columns
+    def test_filters_wide_spreads(self, mock_env):
+        from src.data_client import MarketScreener
+
+        mock_alpaca = MagicMock()
+        # Wide spread (>5%)
+        mock_q = MagicMock()
+        mock_q.bid_price = 10.0
+        mock_q.ask_price = 11.0  # 10% spread
+        mock_alpaca.data.get_stock_latest_quote.return_value = {"WIDE": mock_q}
+
+        screener = MarketScreener(mock_alpaca)
+        screener._finviz_cache = {
+            "test": [{"Ticker": "WIDE", "Company": "Wide Inc", "Sector": "Tech",
+                       "Market Cap": 1e9, "Volume": 1e6, "Change": 0.01}]
+        }
+        screener._cache_time = datetime.now()
+
+        results = screener.screen_stocks()
+        assert len(results) == 0  # filtered out due to wide spread
+
+    def test_filters_dash_tickers(self, mock_env):
+        from src.data_client import MarketScreener
+
+        mock_alpaca = MagicMock()
+        mock_alpaca.data.get_stock_latest_quote.return_value = {}
+
+        screener = MarketScreener(mock_alpaca)
+        screener._finviz_cache = {
+            "test": [{"Ticker": "BF-A", "Company": "Brown Forman", "Sector": "Consumer",
+                       "Market Cap": 1e9, "Volume": 1e6, "Change": 0.01}]
+        }
+        screener._cache_time = datetime.now()
+
+        results = screener.screen_stocks()
+        assert len(results) == 0  # BF-A filtered out (dash in ticker)
 
 
 class TestLunarCrushClient:

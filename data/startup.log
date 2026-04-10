@@ -1,0 +1,16 @@
+[Fri 04/10/2026  9:28:11.55] Bot launcher starting...
+Python 3.14.0
+[Fri 04/10/2026  9:28:11.71] Starting bot...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\MikeF\Desktop\Claude Cowork Projects\Claude Trader\src\main.py", line 14, in <module>
+    from src.data_client import DataService
+  File "C:\Users\MikeF\Desktop\Claude Cowork Projects\Claude Trader\src\data_client.py", line 19, in <module>
+    from alpaca.data.historical import StockHistoricalDataClient
+  File "C:\Users\MikeF\Desktop\Claude Cowork Projects\Claude Trader\.venv\Lib\site-packages\alpaca\data\__init__.py", line 4, in <module>
+    from alpaca.data.requests import *
+  File "C:\Users\MikeF\Desktop\Claude Cowork Projects\Claude Trader\.venv\Lib\site-packages\alpaca\data\requests.py", line 4, in <module>
+    import pytz
+ModuleNotFoundError: No module named 'pytz'
+[Fri 04/10/2026  9:28:12.74] Bot exited with code 1

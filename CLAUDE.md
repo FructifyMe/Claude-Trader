@@ -2,11 +2,11 @@
 
 ## What This Project Is
 
-An autonomous stock trading bot. It scans for momentum breakouts using Massive real-time data, confirms signals with LunarCrush social sentiment, and executes trades via Alpaca. Fully autonomous — owner (Mike) reviews logs after the fact.
+An autonomous stock trading bot. It scans the ENTIRE US stock market via Finviz (9 different screens: unusual volume, momentum breakouts, small-cap movers, mid-cap breakouts, top gainers, high short interest, insider buying, gap-ups, oversold bounces) + Alpaca quote validation. Confirms signals with Claude Haiku AI sentiment analysis. Executes trades via Alpaca. Fully autonomous — owner (Mike) reviews logs after the fact.
 
-**Stack:** Python 3.11+ | Alpaca (execution) | Massive (market data) | LunarCrush (sentiment) | Claude Haiku (edge-case analysis)
+**Stack:** Python 3.11+ | Alpaca (execution + data) | Finviz (full-market screening) | LunarCrush (social sentiment when available) | Claude Haiku (primary sentiment analysis)
 **Capital:** $1,000 — paper trading first, then live
-**Strategy:** Hybrid momentum + social sentiment, swing trading (1-5 day holds)
+**Strategy:** Multi-screen momentum + AI sentiment, swing trading (1-5 day holds). Finds hidden gems across all market caps.
 
 ---
 
@@ -39,11 +39,13 @@ This project runs on Claude Code. Every token costs money. Follow these rules st
 
 ```
 Scheduler (APScheduler, every 5 min market hours)
-  → Scanner (Massive data → technical indicators → momentum score)
-    → Sentiment (LunarCrush Galaxy Score primary, Claude Haiku backup)
-      → Risk Manager (position sizing, exposure limits, circuit breakers)
-        → Executor (Alpaca limit orders + stops)
-          → Logger (JSON trade log + daily summary)
+  → MarketScreener (Finviz 9 screens + Alpaca validation → 200-800 stocks)
+    → Scanner (RSI-5, MACD, volume surge, relative strength vs SPY, gap detection → momentum score)
+      → Sentiment (Claude Haiku primary, LunarCrush when available)
+        → Risk Manager (position sizing, exposure limits, circuit breakers)
+          → Executor (Alpaca bracket orders + stops)
+            → Logger (JSON trade log + daily summary)
+              → Dashboard (auto-refresh HTML)
 ```
 
 ### File Layout

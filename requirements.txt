@@ -8,6 +8,8 @@ alpaca-py>=0.21.0          # Alpaca trading + data SDK
 pandas>=2.0.0              # DataFrames, time series
 ta>=0.11.0                 # Technical indicators (RSI, MACD, Bollinger, SMA)
 numpy>=1.24.0              # Numerical operations
+finvizfinance>=1.3.0       # Finviz full-market screening (free)
+finnhub-python>=2.4.0      # Finnhub fundamentals + real-time (free tier)
 
 # AI / Sentiment
 anthropic>=0.40.0          # Claude Haiku for backup sentiment

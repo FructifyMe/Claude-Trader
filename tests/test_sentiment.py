@@ -138,16 +138,22 @@ class TestHaikuCheck:
 
 
 class TestConfirmSentiment:
-    def test_lc_unavailable_halts(self, mock_ds):
+    def test_lc_unavailable_uses_haiku(self, mock_ds):
+        """When LC is down, falls back to Haiku instead of halting."""
         from src.sentiment import SentimentAnalyzer
 
         mock_ds.lunarcrush.is_available.return_value = False
 
         sa = SentimentAnalyzer(mock_ds)
-        result = sa.confirm_sentiment("AAPL", {"score": 80})
+        with patch.object(sa, 'check_haiku', return_value={
+            "source": "claude_haiku", "symbol": "AAPL",
+            "confirmed": True, "signal": "BULLISH", "confidence": 8, "reason": "test",
+        }) as mock_haiku:
+            result = sa.confirm_sentiment("AAPL", {"score": 80, "components": {}})
 
-        assert result["confirmed"] is False
-        assert "unavailable" in result["reason"].lower()
+        mock_haiku.assert_called_once()
+        assert result["confirmed"] is True
+        assert result["source"] == "claude_haiku"
 
     def test_clear_bullish_uses_lc(self, mock_ds):
         from src.sentiment import SentimentAnalyzer

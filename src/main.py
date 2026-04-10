@@ -18,6 +18,8 @@ from src.risk_manager import RiskManager
 from src.executor import Executor
 from src.portfolio import Portfolio
 from src.logger import TradeLogger
+from src.learner import StrategyLearner
+from src.dashboard import generate_dashboard
 
 log = logging.getLogger(__name__)
 
@@ -31,7 +33,8 @@ class Pipeline:
     def __init__(self):
         self.ds = DataService()
         self.scanner = Scanner(self.ds)
-        self.sentiment = SentimentAnalyzer(self.ds)
+        self.learner = StrategyLearner(self.ds.settings)
+        self.sentiment = SentimentAnalyzer(self.ds, learner=self.learner)
         self.risk = RiskManager(self.ds)
         self.executor = Executor(self.ds)
         self.portfolio = Portfolio(self.ds)
@@ -92,6 +95,8 @@ class Pipeline:
                 "risk_dollars": approval["sizing"]["risk_dollars"],
                 "momentum_score": candidate["score"],
                 "sentiment": sentiment,
+                "screen_sources": candidate.get("sources", []),
+                "components": candidate.get("components", {}),
             }
             signals.append(signal)
             log.info(f"SIGNAL: BUY {signal['shares']} {symbol} @ {entry_price:.2f} (stop {stop_price:.2f})")
@@ -170,14 +175,27 @@ class TradingBot:
             name="Weekly P&L reset",
         )
 
+        # Strategy learning cycle — daily after market close
+        self.scheduler.add_job(
+            self._safe_run(self._learning_cycle),
+            CronTrigger(hour=16, minute=15, day_of_week="mon-fri", timezone=self.tz),
+            id="learning_cycle",
+            name="Strategy learning cycle",
+        )
+
         # Graceful shutdown
         signal.signal(signal.SIGINT, self._shutdown)
         signal.signal(signal.SIGTERM, self._shutdown)
 
         self._running = True
-        log.info("Scheduler started. Jobs registered:")
+
+        # Generate initial dashboard
+        self._update_dashboard()
+        log.info("Dashboard generated: dashboard.html")
+
+        log.info("Scheduler starting. Jobs registered:")
         for job in self.scheduler.get_jobs():
-            log.info(f"  - {job.name} (next: {job.next_run_time})")
+            log.info(f"  - {job.name} (id={job.id})")
 
         try:
             self.scheduler.start()
@@ -210,6 +228,7 @@ class TradingBot:
         for sig in signals:
             result = self.pipeline.executor.execute_buy(sig)
             if result["success"]:
+                haiku_data = sig["sentiment"].get("haiku", {})
                 self.pipeline.logger.log_trade({
                     "action": "BUY",
                     "symbol": sig["symbol"],
@@ -217,6 +236,14 @@ class TradingBot:
                     "price": sig["entry_price"],
                     "stop_price": sig["stop_price"],
                     "momentum_score": sig["momentum_score"],
+                    "screen_sources": sig.get("screen_sources", []),
+                    "source_count": len(sig.get("screen_sources", [])),
+                    "components": sig.get("components", {}),
+                    "sentiment_result": {
+                        "source": sig["sentiment"].get("source", ""),
+                        "signal": haiku_data.get("signal", ""),
+                        "confidence": haiku_data.get("confidence", 0),
+                    },
                 })
                 self.pipeline._api_fail_count = 0
             else:
@@ -224,6 +251,9 @@ class TradingBot:
 
         # Update trailing stops after new entries
         self.pipeline.executor.update_trailing_stops()
+
+        # Refresh dashboard
+        self._update_dashboard()
 
     def _check_exits(self):
         """Check all positions for exit conditions."""
@@ -236,6 +266,10 @@ class TradingBot:
                 # Calculate realized P&L
                 entry = self.pipeline.executor._entry_prices.get(action["symbol"], 0)
                 pnl = (action["price"] - entry) * action["shares"] if entry > 0 else 0
+                pnl_pct = (action["price"] - entry) / entry if entry > 0 else 0
+
+                entry_time = self.pipeline.executor._entry_times.get(action["symbol"])
+                hold_days = (datetime.now() - entry_time).days if entry_time else 0
 
                 self.pipeline.risk.update_pnl(pnl)
                 self.pipeline.portfolio.record_closed_trade({
@@ -253,7 +287,12 @@ class TradingBot:
                     "reason": action["reason"],
                     "detail": action.get("detail", ""),
                     "pnl": round(pnl, 2),
+                    "pnl_pct": round(pnl_pct, 4),
+                    "hold_days": hold_days,
+                    "outcome": "win" if pnl > 0 else "loss",
                 })
+
+        self._update_dashboard()
 
     def _daily_summary(self):
         """End-of-day summary."""
@@ -269,6 +308,32 @@ class TradingBot:
             f"total_pnl=${metrics.get('total_pnl', 0):.2f}"
         )
 
+    def _learning_cycle(self):
+        """Post-market: analyze completed trades and adjust strategy."""
+        log.info("--- Learning cycle ---")
+        learner = self.pipeline.learner
+
+        report = learner.get_learning_report()
+        log.info(f"Learning status: {report['completed_trades']} trades, "
+                 f"{report['days_active']} days, "
+                 f"win_rate={report['win_rate']:.0%}")
+
+        if not learner.should_adjust():
+            min_days = learner.cfg.get("min_days_before_adjusting", 7)
+            min_trades = learner.cfg.get("min_completed_trades", 10)
+            log.info(f"Not ready to adjust (need {min_trades} trades over {min_days} days)")
+            return
+
+        adjustments = learner.generate_adjustments()
+        learner.apply_adjustments(adjustments)
+
+        log.info(f"Learning cycle {adjustments['cycle_number']}: adjustments applied")
+        log.info(f"  Weight changes: {adjustments.get('weight_adjustments', {})}")
+        log.info(f"  Screen boosts: {adjustments.get('screen_boosts', {})}")
+        log.info(f"  Score threshold: {adjustments.get('score_threshold_adjustment')}")
+        if adjustments.get("reverted"):
+            log.warning(f"  REVERTED to defaults: {adjustments.get('reason')}")
+
     def _daily_reset(self):
         """Reset daily P&L tracker."""
         self.pipeline.risk.reset_daily()
@@ -278,6 +343,15 @@ class TradingBot:
         """Reset weekly P&L tracker."""
         self.pipeline.risk.reset_weekly()
         log.info("Weekly P&L reset")
+
+    def _update_dashboard(self):
+        """Refresh the HTML dashboard with current state."""
+        try:
+            account = self.pipeline.ds.alpaca.get_account()
+            positions = self.pipeline.ds.alpaca.get_positions()
+            generate_dashboard(account, positions, bot_status="Running")
+        except Exception as e:
+            log.debug(f"Dashboard update failed: {e}")
 
     # ── Helpers ────────────────────────────────────────────────
 

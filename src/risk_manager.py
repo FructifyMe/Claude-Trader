@@ -137,17 +137,17 @@ class RiskManager:
             daily_loss_pct = 0
             weekly_loss_pct = 0
 
-        # LunarCrush API check
+        # LunarCrush API check (warning only — Haiku backup handles sentiment)
         lc_available = self.ds.lunarcrush.is_available()
         if not lc_available:
-            reasons.append("LunarCrush API unavailable")
+            log.info("LunarCrush unavailable — Claude Haiku will handle sentiment")
 
         # Trading hours check
         in_trading_window = self._in_trading_window()
         if not in_trading_window:
             reasons.append("Outside trading window")
 
-        halted = self._daily_halt or self._weekly_halt or not lc_available or not in_trading_window
+        halted = self._daily_halt or self._weekly_halt or not in_trading_window
 
         return {
             "halted": halted,

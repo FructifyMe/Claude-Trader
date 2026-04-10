@@ -44,6 +44,11 @@ class TestExecuteBuy:
     def test_successful_buy(self, mock_ds):
         from src.executor import Executor
 
+        # Mock bracket order via trading.submit_order
+        mock_order = MagicMock()
+        mock_order.id = "order-123"
+        mock_ds.alpaca.trading.submit_order.return_value = mock_order
+
         ex = Executor(mock_ds)
         signal = {"symbol": "AAPL", "shares": 2, "entry_price": 100.0, "stop_price": 95.0}
 
@@ -51,15 +56,14 @@ class TestExecuteBuy:
 
         assert result["success"] is True
         assert result["order_id"] == "order-123"
-        assert result["stop_order_id"] == "stop-456"
+        assert result["stop_order_id"] == "bracket"
         assert ex._entry_prices["AAPL"] == 100.0
-        mock_ds.alpaca.submit_limit_order.assert_called_once()
-        mock_ds.alpaca.submit_stop_order.assert_called_once()
+        mock_ds.alpaca.trading.submit_order.assert_called_once()
 
     def test_buy_failure(self, mock_ds):
         from src.executor import Executor
 
-        mock_ds.alpaca.submit_limit_order.side_effect = Exception("API error")
+        mock_ds.alpaca.trading.submit_order.side_effect = Exception("API error")
 
         ex = Executor(mock_ds)
         signal = {"symbol": "FAIL", "shares": 1, "entry_price": 50.0, "stop_price": 47.5}

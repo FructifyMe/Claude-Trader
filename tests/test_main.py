@@ -54,7 +54,8 @@ def _make_full_settings():
 
 class TestPipeline:
     @patch("src.main.DataService")
-    def test_scan_cycle_halted(self, mock_ds_cls):
+    def test_scan_cycle_halted_outside_hours(self, mock_ds_cls):
+        """Trading halts outside market hours, not when LC is down."""
         from src.main import Pipeline
 
         mock_ds = MagicMock()
@@ -63,10 +64,9 @@ class TestPipeline:
         mock_ds.alpaca.get_account.return_value = {
             "equity": 1000, "cash": 800, "buying_power": 1600, "portfolio_value": 1000,
         }
-        mock_ds.lunarcrush.is_available.return_value = False
 
         pipeline = Pipeline()
-        with patch.object(pipeline.risk, '_in_trading_window', return_value=True):
+        with patch.object(pipeline.risk, '_in_trading_window', return_value=False):
             signals = pipeline.run_scan_cycle()
 
         assert signals == []

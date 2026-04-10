@@ -5,14 +5,16 @@
 
 strategy:
   # --- Universe Filter (daily pre-market) ---
+  # Now uses Finviz full-market screens (9 different strategies)
+  # + Alpaca quote validation. Finds small-caps, mid-caps, everything.
   universe:
-    min_market_cap: 2_000_000_000    # $2B minimum
-    min_avg_volume: 1_000_000        # 1M shares/day
+    min_market_cap: 0                # Finviz handles per-screen (small/mid/large)
+    min_avg_volume: 100_000          # 100K minimum (was 1M — opens up small caps)
     min_price: 5.0                   # Avoid penny stocks
     max_price: 500.0                 # Tradeable range for $1K
-    galaxy_score_min: 50             # LunarCrush social health floor
+    galaxy_score_min: 50             # LunarCrush social health floor (when available)
     earnings_exclusion_days: 2       # Skip stocks reporting within N days
-    max_universe_size: 50            # Cap watchlist to top N candidates
+    max_universe_size: 100           # Expanded from 50 — more opportunities
 
   # --- Momentum Scoring ---
   momentum:
@@ -28,15 +30,17 @@ strategy:
     momentum_lookback_days: 5
     score_threshold: 70              # Minimum score to pass to sentiment
 
-    # Weights (must sum to 1.0)
+    # Weights (sum to 0.80 — remaining 0.20 is relative_strength + gap in code)
     weights:
       sma: 0.20
       rsi: 0.15
       volume: 0.20
       macd: 0.10
-      price_momentum: 0.10
-      social_volume: 0.15
-      sentiment_shift: 0.10
+      price_momentum: 0.05
+      social_volume: 0.05
+      sentiment_shift: 0.05
+      # relative_strength: 0.10 (hardcoded — outperformance vs SPY)
+      # gap: 0.10 (hardcoded — gap-up catalyst detection)
 
   # --- Sentiment Confirmation ---
   sentiment:
@@ -87,3 +91,24 @@ logging:
   daily_summary_path: "data/daily_summary"
   log_level: "INFO"                 # DEBUG for development, INFO for production
   log_decisions: true               # Log every skip/entry/exit with rationale
+
+# ============================================================
+# Strategy Learning (reinforcement from trade outcomes)
+# Collects data for 7 days, then makes conservative adjustments
+# ============================================================
+learning:
+  enabled: true
+  min_days_before_adjusting: 7        # Paper trading warm-up period
+  min_completed_trades: 10            # Need enough round-trip data
+  max_weight_delta_per_cycle: 0.03    # Max change per weight per daily cycle
+  max_weight_drift_from_original: 0.15  # Absolute cap on drift from settings.yaml
+  weight_floor: 0.03                  # Minimum weight for any component
+  max_screen_boost: 5.0               # Max +/- score boost per screen source
+  min_screen_trades: 3                # Min completed trades before screen gets a boost
+  score_threshold_min: 60             # Floor for score threshold adjustments
+  score_threshold_max: 85             # Ceiling for score threshold adjustments
+  revert_win_rate_floor: 0.20         # Revert to defaults if rolling win rate drops below
+  revert_window_trades: 5             # Number of recent trades for revert check
+  drift_decay_rate: 0.10              # Pull 10% back toward original each cycle
+  adjustments_path: "data/learner_adjustments.json"
+  history_path: "data/learner_history.json"

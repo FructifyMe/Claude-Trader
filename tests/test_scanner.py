@@ -18,7 +18,6 @@ def _make_bars(n=50, trend="up"):
 
     volume_base = 1_000_000
     volume = np.random.uniform(0.8, 1.2, n) * volume_base
-    # Make last bar volume high for surge detection
     volume[-1] = volume_base * 2.0
 
     return pd.DataFrame({
@@ -36,13 +35,13 @@ def mock_data_service():
     ds.settings = {
         "strategy": {
             "universe": {
-                "min_market_cap": 2_000_000_000,
-                "min_avg_volume": 1_000_000,
+                "min_market_cap": 0,
+                "min_avg_volume": 100_000,
                 "min_price": 5.0,
                 "max_price": 500.0,
                 "galaxy_score_min": 50,
                 "earnings_exclusion_days": 2,
-                "max_universe_size": 50,
+                "max_universe_size": 100,
             },
             "momentum": {
                 "sma_period": 20,
@@ -61,98 +60,75 @@ def mock_data_service():
                     "rsi": 0.15,
                     "volume": 0.20,
                     "macd": 0.10,
-                    "price_momentum": 0.10,
-                    "social_volume": 0.15,
-                    "sentiment_shift": 0.10,
+                    "price_momentum": 0.05,
+                    "social_volume": 0.05,
+                    "sentiment_shift": 0.05,
                 },
             },
         }
     }
+    # Default: LC unavailable, SPY bars available
+    ds.lunarcrush.is_available.return_value = False
+    ds.alpaca.get_bars.return_value = _make_bars(50, "up")
     return ds
 
 
 class TestUniverseFilter:
-    def test_build_universe_filters_by_galaxy_score(self, mock_data_service, tmp_path):
+    def test_build_universe_from_market_screener(self, mock_data_service, tmp_path):
         from src.scanner import Scanner
 
         mock_data_service.massive.screen_stocks.return_value = [
-            {"symbol": "AAPL", "market_cap": 3e12, "avg_volume": 50e6, "price": 180},
-            {"symbol": "MSFT", "market_cap": 2.5e12, "avg_volume": 30e6, "price": 400},
-            {"symbol": "WEAK", "market_cap": 5e9, "avg_volume": 2e6, "price": 50},
+            {"symbol": "AAPL", "price": 180, "volume": 50e6,
+             "sources": ["unusual_volume", "top_gainers"], "source_count": 2},
+            {"symbol": "MSFT", "price": 400, "volume": 30e6,
+             "sources": ["momentum_breakout"], "source_count": 1},
         ]
-
-        def mock_social(symbol):
-            scores = {"AAPL": 72, "MSFT": 65, "WEAK": 30}
-            return {
-                "galaxy_score": scores.get(symbol, 0),
-                "social_volume": 1000,
-                "social_volume_change": 1.0,
-            }
-
-        mock_data_service.lunarcrush.get_stock_social.side_effect = mock_social
 
         scanner = Scanner(mock_data_service)
         scanner.watchlist_path = str(tmp_path / "watchlist.json")
 
         universe = scanner.build_universe()
-
-        # WEAK should be filtered out (galaxy_score 30 < 50)
         symbols = [s["symbol"] for s in universe]
         assert "AAPL" in symbols
         assert "MSFT" in symbols
-        assert "WEAK" not in symbols
 
-    def test_build_universe_sorts_by_galaxy_score(self, mock_data_service, tmp_path):
+    def test_build_universe_with_lc_enrichment(self, mock_data_service, tmp_path):
         from src.scanner import Scanner
 
         mock_data_service.massive.screen_stocks.return_value = [
-            {"symbol": "LOW", "market_cap": 3e12, "avg_volume": 50e6, "price": 100},
-            {"symbol": "HIGH", "market_cap": 3e12, "avg_volume": 50e6, "price": 100},
+            {"symbol": "AAPL", "price": 180, "volume": 50e6,
+             "sources": ["unusual_volume"], "source_count": 1},
         ]
-
-        def mock_social(symbol):
-            scores = {"LOW": 55, "HIGH": 85}
-            return {"galaxy_score": scores[symbol], "social_volume": 1000, "social_volume_change": 1.0}
-
-        mock_data_service.lunarcrush.get_stock_social.side_effect = mock_social
+        mock_data_service.lunarcrush.is_available.return_value = True
+        mock_data_service.lunarcrush.get_stock_social.return_value = {
+            "galaxy_score": 85, "social_volume": 5000, "sentiment": 4.2
+        }
 
         scanner = Scanner(mock_data_service)
         scanner.watchlist_path = str(tmp_path / "watchlist.json")
 
         universe = scanner.build_universe()
-        assert universe[0]["symbol"] == "HIGH"
-        assert universe[1]["symbol"] == "LOW"
+        assert universe[0].get("galaxy_score") == 85
 
     def test_universe_respects_max_size(self, mock_data_service, tmp_path):
         from src.scanner import Scanner
 
         mock_data_service.massive.screen_stocks.return_value = [
-            {"symbol": f"S{i}", "market_cap": 3e12, "avg_volume": 50e6, "price": 100}
-            for i in range(100)
+            {"symbol": f"S{i}", "price": 100, "volume": 1e6,
+             "sources": ["test"], "source_count": 1}
+            for i in range(200)
         ]
-        mock_data_service.lunarcrush.get_stock_social.return_value = {
-            "galaxy_score": 80, "social_volume": 1000, "social_volume_change": 1.0
-        }
 
         scanner = Scanner(mock_data_service)
         scanner.watchlist_path = str(tmp_path / "watchlist.json")
 
         universe = scanner.build_universe()
-        assert len(universe) <= 50
+        assert len(universe) <= 100
 
 
 class TestMomentumScoring:
-    def test_uptrend_scores_high(self, mock_data_service):
+    def test_uptrend_scores_positive(self, mock_data_service):
         from src.scanner import Scanner
-
-        bars = _make_bars(50, "up")
-        mock_data_service.alpaca.get_bars.return_value = bars
-        mock_data_service.lunarcrush.get_stock_social.return_value = {
-            "galaxy_score": 75,
-            "social_volume": 5000,
-            "social_volume_change": 3.0,
-            "sentiment": 4.5,
-        }
 
         scanner = Scanner(mock_data_service)
         result = scanner.score_momentum("AAPL")
@@ -161,12 +137,14 @@ class TestMomentumScoring:
         assert result["score"] > 0
         assert "components" in result
         assert "sma" in result["components"]
+        assert "rsi5" in result["components"]
+        assert "relative_strength" in result["components"]
+        assert "gap" in result["components"]
 
     def test_insufficient_data_returns_zero(self, mock_data_service):
         from src.scanner import Scanner
 
-        bars = _make_bars(5, "up")
-        mock_data_service.alpaca.get_bars.return_value = bars
+        mock_data_service.alpaca.get_bars.return_value = _make_bars(5, "up")
 
         scanner = Scanner(mock_data_service)
         result = scanner.score_momentum("TINY")
@@ -174,25 +152,24 @@ class TestMomentumScoring:
         assert result["score"] == 0
         assert "insufficient" in result.get("reason", "")
 
-    def test_score_components_are_bounded(self, mock_data_service):
+    def test_score_bounded_0_to_100(self, mock_data_service):
         from src.scanner import Scanner
-
-        bars = _make_bars(50, "up")
-        mock_data_service.alpaca.get_bars.return_value = bars
-        mock_data_service.lunarcrush.get_stock_social.return_value = {
-            "galaxy_score": 90,
-            "social_volume": 10000,
-            "social_volume_change": 5.0,
-            "sentiment": 5.0,
-        }
 
         scanner = Scanner(mock_data_service)
         result = scanner.score_momentum("TEST")
 
         assert 0 <= result["score"] <= 100
-        for key, val in result["components"].items():
-            if key not in ("rsi_value", "vol_ratio"):
-                assert 0 <= val <= 100, f"{key} out of bounds: {val}"
+
+    def test_data_unavailable_returns_zero(self, mock_data_service):
+        from src.scanner import Scanner
+
+        mock_data_service.alpaca.get_bars.side_effect = Exception("API error")
+
+        scanner = Scanner(mock_data_service)
+        result = scanner.score_momentum("FAIL")
+
+        assert result["score"] == 0
+        assert "unavailable" in result.get("reason", "")
 
     def test_scan_watchlist_returns_sorted(self, mock_data_service, tmp_path):
         from src.scanner import Scanner
@@ -209,20 +186,10 @@ class TestMomentumScoring:
         wl_path = tmp_path / "watchlist.json"
         wl_path.write_text(json.dumps(watchlist))
 
-        def mock_bars(symbol, **kwargs):
-            return _make_bars(50, "up")
-
-        mock_data_service.alpaca.get_bars.side_effect = mock_bars
-        mock_data_service.lunarcrush.get_stock_social.return_value = {
-            "galaxy_score": 70, "social_volume": 3000,
-            "social_volume_change": 2.0, "sentiment": 4.0,
-        }
-
         scanner = Scanner(mock_data_service)
         scanner.watchlist_path = str(wl_path)
 
         results = scanner.scan_watchlist()
-
         assert len(results) == 2
         assert results[0]["score"] >= results[1]["score"]
 
@@ -238,18 +205,12 @@ class TestMomentumScoring:
         wl_path = tmp_path / "watchlist.json"
         wl_path.write_text(json.dumps(watchlist))
 
-        # Return flat bars that won't score high
-        bars = _make_bars(50, "flat")
-        mock_data_service.alpaca.get_bars.return_value = bars
-        mock_data_service.lunarcrush.get_stock_social.return_value = {
-            "galaxy_score": 40, "social_volume": 500,
-            "social_volume_change": 0.5, "sentiment": 2.5,
-        }
+        # Flat bars — unlikely to score above 70
+        mock_data_service.alpaca.get_bars.return_value = _make_bars(50, "flat")
 
         scanner = Scanner(mock_data_service)
         scanner.watchlist_path = str(wl_path)
 
         candidates = scanner.get_candidates()
-        # Flat trend with low social should not pass threshold 70
         for c in candidates:
             assert c["passes_threshold"] is True

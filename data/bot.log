@@ -1,0 +1,1740 @@
+2026-04-09 13:50:30 [INFO] __main__: === Auto-Trader Bot starting ===
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-09 13:50:30 [INFO] __main__: Scheduler starting. Jobs registered:
+2026-04-09 13:50:30 [INFO] __main__:   - Pre-market universe refresh (id=universe_refresh)
+2026-04-09 13:50:30 [INFO] __main__:   - Scan and execute cycle (id=scan_cycle)
+2026-04-09 13:50:30 [INFO] __main__:   - Exit condition check (id=exit_check)
+2026-04-09 13:50:30 [INFO] __main__:   - End-of-day summary (id=daily_summary)
+2026-04-09 13:50:30 [INFO] __main__:   - Daily P&L reset (id=daily_reset)
+2026-04-09 13:50:30 [INFO] __main__:   - Weekly P&L reset (id=weekly_reset)
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Added job "Pre-market universe refresh" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Added job "Scan and execute cycle" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Added job "Exit condition check" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Added job "End-of-day summary" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Added job "Daily P&L reset" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Added job "Weekly P&L reset" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Scheduler started
+.scheduler: Added job "Weekly P&L reset" to job store "default"
+2026-04-09 13:50:30 [INFO] apscheduler.scheduler: Scheduler started
+2026-04-10 09:31:57 [INFO] __main__: === Auto-Trader Bot starting ===
+2026-04-10 09:31:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:31:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:31:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:31:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:31:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:31:57 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:31:58 [INFO] __main__: Dashboard generated: dashboard.html
+2026-04-10 09:31:58 [INFO] __main__: Scheduler starting. Jobs registered:
+2026-04-10 09:31:58 [INFO] __main__:   - Pre-market universe refresh (id=universe_refresh)
+2026-04-10 09:31:58 [INFO] __main__:   - Scan and execute cycle (id=scan_cycle)
+2026-04-10 09:31:58 [INFO] __main__:   - Exit condition check (id=exit_check)
+2026-04-10 09:31:58 [INFO] __main__:   - End-of-day summary (id=daily_summary)
+2026-04-10 09:31:58 [INFO] __main__:   - Daily P&L reset (id=daily_reset)
+2026-04-10 09:31:58 [INFO] __main__:   - Weekly P&L reset (id=weekly_reset)
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Added job "Pre-market universe refresh" to job store "default"
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Added job "Scan and execute cycle" to job store "default"
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Added job "Exit condition check" to job store "default"
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Added job "End-of-day summary" to job store "default"
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Added job "Daily P&L reset" to job store "default"
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Added job "Weekly P&L reset" to job store "default"
+2026-04-10 09:31:58 [INFO] apscheduler.scheduler: Scheduler started
+2026-04-10 09:36:57 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:36:57 EDT)" (scheduled at 2026-04-10 09:36:57.921243-04:00)
+2026-04-10 09:36:57 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:41:57 EDT)" executed successfully
+2026-04-10 09:36:57 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:41:57 EDT)" (scheduled at 2026-04-10 09:36:57.921437-04:00)
+2026-04-10 09:36:57 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:41:57 EDT)" executed successfully
+2026-04-10 09:41:57 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:46:57 EDT)" (scheduled at 2026-04-10 09:41:57.921437-04:00)
+2026-04-10 09:41:57 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:46:57 EDT)" executed successfully
+2026-04-10 09:41:57 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:46:57 EDT)" (scheduled at 2026-04-10 09:41:57.921243-04:00)
+2026-04-10 09:41:57 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:46:57 EDT)" executed successfully
+2026-04-10 09:46:57 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:51:57 EDT)" (scheduled at 2026-04-10 09:46:57.921243-04:00)
+2026-04-10 09:46:57 [INFO] __main__: --- Scan cycle ---
+2026-04-10 09:46:57 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:51:57 EDT)" (scheduled at 2026-04-10 09:46:57.921437-04:00)
+2026-04-10 09:46:58 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:51:57 EDT)" executed successfully
+2026-04-10 09:46:58 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 09:46:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:46:59 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 09:46:59 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 09:46:59 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 09:46:59 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 09:46:59 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 09:46:59 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 09:47:00 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 09:47:00 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 09:47:00 [ERROR] __main__: Job _scan_and_execute failed (1/3): 'passes_threshold'
+2026-04-10 09:47:00 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:51:57 EDT)" executed successfully
+2026-04-10 09:49:43 [INFO] __main__: === Auto-Trader Bot starting ===
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-10 09:49:43 [INFO] __main__: Dashboard generated: dashboard.html
+2026-04-10 09:49:43 [INFO] __main__: Scheduler starting. Jobs registered:
+2026-04-10 09:49:43 [INFO] __main__:   - Pre-market universe refresh (id=universe_refresh)
+2026-04-10 09:49:43 [INFO] __main__:   - Scan and execute cycle (id=scan_cycle)
+2026-04-10 09:49:43 [INFO] __main__:   - Exit condition check (id=exit_check)
+2026-04-10 09:49:43 [INFO] __main__:   - End-of-day summary (id=daily_summary)
+2026-04-10 09:49:43 [INFO] __main__:   - Daily P&L reset (id=daily_reset)
+2026-04-10 09:49:43 [INFO] __main__:   - Weekly P&L reset (id=weekly_reset)
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Added job "Pre-market universe refresh" to job store "default"
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Added job "Scan and execute cycle" to job store "default"
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Added job "Exit condition check" to job store "default"
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Added job "End-of-day summary" to job store "default"
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Added job "Daily P&L reset" to job store "default"
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Added job "Weekly P&L reset" to job store "default"
+2026-04-10 09:49:43 [INFO] apscheduler.scheduler: Scheduler started
+2026-04-10 09:54:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:54:43 EDT)" (scheduled at 2026-04-10 09:54:43.429908-04:00)
+2026-04-10 09:54:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 09:54:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:59:43 EDT)" (scheduled at 2026-04-10 09:54:43.430106-04:00)
+2026-04-10 09:54:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 09:59:43 EDT)" executed successfully
+2026-04-10 09:54:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 09:54:44 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:54:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 09:54:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 09:54:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 09:54:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 09:54:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 09:54:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 09:54:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 09:54:46 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 09:54:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 09:54:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 09:54:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 09:54:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 09:54:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 09:54:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 09:54:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 09:54:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 09:54:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 09:54:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 09:54:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 09:54:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:54:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:54:51 [INFO] __main__: SIGNAL: BUY 923 GLXY @ 21.66 (stop 20.58)
+2026-04-10 09:54:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 09:54:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:54:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 09:54:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 09:54:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:54:54 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 09:54:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 09:54:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:54:56 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 09:54:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 09:54:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:54:57 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 09:54:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 09:54:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:54:58 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 09:54:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 09:55:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:55:00 [INFO] __main__: SIGNAL: BUY 991 WULF @ 20.17 (stop 19.16)
+2026-04-10 09:55:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 09:55:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:55:01 [INFO] __main__: SIGNAL: BUY 851 RGTZ @ 23.49 (stop 22.32)
+2026-04-10 09:55:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 09:55:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:55:03 [INFO] __main__: SIGNAL: BUY 428 QBTZ @ 46.63 (stop 44.30)
+2026-04-10 09:55:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 09:55:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:55:05 [INFO] __main__: SIGNAL: BUY 596 MPLT @ 33.51 (stop 31.83)
+2026-04-10 09:55:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 09:55:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:06 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 09:55:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 09:55:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 09:55:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 09:55:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:55:09 [INFO] __main__: SIGNAL: BUY 468 VIAV @ 42.68 (stop 40.55)
+2026-04-10 09:55:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 09:55:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:11 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 09:55:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 09:55:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:13 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 09:55:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 09:55:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:14 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 09:55:14 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 09:55:16 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:55:16 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 09:55:16 [INFO] src.executor: EXECUTED BUY: 923 GLXY @ 21.66, stop @ 20.58 (bracket)
+2026-04-10 09:55:16 [INFO] src.logger: TRADE LOG: BUY GLXY — 
+2026-04-10 09:55:16 [INFO] src.executor: EXECUTED BUY: 991 WULF @ 20.17, stop @ 19.16 (bracket)
+2026-04-10 09:55:16 [INFO] src.logger: TRADE LOG: BUY WULF — 
+2026-04-10 09:55:16 [INFO] src.executor: EXECUTED BUY: 851 RGTZ @ 23.49, stop @ 22.32 (bracket)
+2026-04-10 09:55:16 [INFO] src.logger: TRADE LOG: BUY RGTZ — 
+2026-04-10 09:55:16 [INFO] src.executor: EXECUTED BUY: 428 QBTZ @ 46.63, stop @ 44.30 (bracket)
+2026-04-10 09:55:16 [INFO] src.logger: TRADE LOG: BUY QBTZ — 
+2026-04-10 09:55:16 [INFO] src.executor: EXECUTED BUY: 596 MPLT @ 33.51, stop @ 31.83 (bracket)
+2026-04-10 09:55:16 [INFO] src.logger: TRADE LOG: BUY MPLT — 
+2026-04-10 09:55:16 [INFO] src.executor: EXECUTED BUY: 468 VIAV @ 42.68, stop @ 40.55 (bracket)
+2026-04-10 09:55:16 [INFO] src.logger: TRADE LOG: BUY VIAV — 
+2026-04-10 09:55:16 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 09:59:43 EDT)" executed successfully
+2026-04-10 09:59:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:04:43 EDT)" (scheduled at 2026-04-10 09:59:43.429908-04:00)
+2026-04-10 09:59:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 09:59:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:04:43 EDT)" (scheduled at 2026-04-10 09:59:43.430106-04:00)
+2026-04-10 09:59:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 09:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 09:59:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 09:59:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 09:59:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 09:59:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 09:59:45 [INFO] src.executor: EXIT MPLT: trailing_stop — Trailing stop hit: 13.5% from high 33.51
+2026-04-10 09:59:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 09:59:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 09:59:45 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 09:59:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 09:59:45 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 09:59:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 09:59:45 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 09:59:46 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 09:59:46 [INFO] src.logger: TRADE LOG: SELL MPLT — trailing_stop
+2026-04-10 09:59:46 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:04:43 EDT)" executed successfully
+2026-04-10 09:59:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 09:59:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 09:59:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 09:59:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 09:59:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 09:59:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 09:59:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 09:59:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 09:59:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 09:59:48 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 09:59:48 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 09:59:49 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:49 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:59:49 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 09:59:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 09:59:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:51 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 09:59:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 09:59:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:52 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 09:59:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 09:59:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:53 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 09:59:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 09:59:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:55 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 09:59:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 09:59:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:56 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 09:59:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 09:59:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:57 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:59:57 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 09:59:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 09:59:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 09:59:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 09:59:59 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 09:59:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:00:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:00:00 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:00:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:00:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:00:01 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:00:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:00:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:03 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:00:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:00:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:04 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:00:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:00:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:05 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:00:05 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:00:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:00:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:07 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:00:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:00:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:08 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:00:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:00:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:10 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:00:10 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:00:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:00:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:00:11 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:00:11 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:00:11 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:00:11 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:00:11 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:00:11 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:00:12 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:04:43 EDT)" executed successfully
+2026-04-10 10:04:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:09:43 EDT)" (scheduled at 2026-04-10 10:04:43.429908-04:00)
+2026-04-10 10:04:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:04:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:09:43 EDT)" (scheduled at 2026-04-10 10:04:43.430106-04:00)
+2026-04-10 10:04:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:04:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:04:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:04:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:04:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:09:43 EDT)" executed successfully
+2026-04-10 10:04:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:04:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:04:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:04:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:04:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:04:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:04:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:04:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:04:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:04:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:04:48 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:04:49 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:04:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:04:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:04:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:04:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:04:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:04:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:04:51 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:04:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:04:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:04:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:04:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:04:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:04:54 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:04:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:04:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:04:56 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:04:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:04:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:04:57 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:04:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:04:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:04:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:04:58 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:04:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:05:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:05:00 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:05:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:05:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:05:01 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:05:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:05:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:05:03 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:05:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:05:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:05 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:05:05 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:05:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:05:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:07 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:05:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:05:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:08 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:05:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:05:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:05:09 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:05:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:05:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:10 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:05:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:05:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:11 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:05:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:05:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:13 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:05:13 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:05:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:05:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:05:14 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:05:14 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:05:14 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:05:14 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:05:14 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:05:14 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:05:14 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:09:43 EDT)" executed successfully
+2026-04-10 10:09:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:14:43 EDT)" (scheduled at 2026-04-10 10:09:43.429908-04:00)
+2026-04-10 10:09:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:09:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:14:43 EDT)" (scheduled at 2026-04-10 10:09:43.430106-04:00)
+2026-04-10 10:09:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:09:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:09:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:09:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:09:45 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:14:43 EDT)" executed successfully
+2026-04-10 10:09:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:09:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:09:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:09:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:09:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:09:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:09:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:09:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:09:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:09:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:09:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:09:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:09:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:09:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:09:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:09:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:09:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:09:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:09:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:09:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:51 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:09:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:09:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:53 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:09:53 [INFO] src.logger: DECISION: SKIP NBIG — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:09:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:09:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:55 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:09:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:09:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:09:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:09:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:09:58 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:09:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:09:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:09:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:09:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:09:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:10:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:10:01 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:10:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:10:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:03 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 10:10:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:10:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:10:04 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:10:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:10:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:05 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:10:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:10:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:10:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:10:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:10:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:10:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:10:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:09 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:10:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:10:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:11 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:10:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:10:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:12 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 10:10:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:10:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:10:14 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:10:14 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:10:14 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:10:14 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:10:14 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:10:14 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:10:14 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:14:43 EDT)" executed successfully
+2026-04-10 10:14:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:19:43 EDT)" (scheduled at 2026-04-10 10:14:43.429908-04:00)
+2026-04-10 10:14:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:14:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:19:43 EDT)" (scheduled at 2026-04-10 10:14:43.430106-04:00)
+2026-04-10 10:14:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:14:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:14:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:14:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:14:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:19:43 EDT)" executed successfully
+2026-04-10 10:14:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:14:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:14:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:14:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:14:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:14:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:14:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:14:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:14:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:14:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:14:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:14:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:14:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:14:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:14:48 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:14:48 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:14:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:14:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:14:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:14:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:14:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:14:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:14:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:14:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:54 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:14:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:14:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:55 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:14:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:14:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:57 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 10:14:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:14:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:14:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:14:58 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:14:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:15:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:15:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:15:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:15:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:15:01 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:15:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:15:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:15:02 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:15:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:15:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:05 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:15:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:15:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:06 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:15:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:15:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:15:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:15:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:15:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:09 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:15:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:15:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:10 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:15:10 [INFO] src.logger: DECISION: SKIP VKTX — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:15:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:15:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:11 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 10:15:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:15:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:15:13 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:15:13 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:15:13 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:15:13 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:15:13 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:15:13 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:15:13 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:19:43 EDT)" executed successfully
+2026-04-10 10:19:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:24:43 EDT)" (scheduled at 2026-04-10 10:19:43.430106-04:00)
+2026-04-10 10:19:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:24:43 EDT)" (scheduled at 2026-04-10 10:19:43.429908-04:00)
+2026-04-10 10:19:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:19:44 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:19:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:19:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:19:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:19:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:24:43 EDT)" executed successfully
+2026-04-10 10:19:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:19:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:19:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:19:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:19:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:19:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:19:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:19:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:19:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:19:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:19:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:19:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:19:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:19:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:19:48 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:19:48 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:19:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:19:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:19:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:19:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:51 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:19:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:19:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:19:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:19:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:54 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:19:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:19:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:19:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:19:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:57 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 10:19:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:19:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:19:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:19:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:19:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:20:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:20:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:20:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:20:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:01 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 10:20:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:20:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:20:03 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:20:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:20:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:05 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:20:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:20:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:06 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:20:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:20:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:07 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:20:07 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:20:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:20:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:09 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:20:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:20:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:10 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:20:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:20:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:11 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 10:20:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:20:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:20:12 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:20:13 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:20:13 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:20:13 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:20:13 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:20:13 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:20:13 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:24:43 EDT)" executed successfully
+2026-04-10 10:24:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:29:43 EDT)" (scheduled at 2026-04-10 10:24:43.429908-04:00)
+2026-04-10 10:24:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:24:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:29:43 EDT)" (scheduled at 2026-04-10 10:24:43.430106-04:00)
+2026-04-10 10:24:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:24:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:24:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:24:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:24:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:24:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:24:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:24:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:24:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:24:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:24:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:29:43 EDT)" executed successfully
+2026-04-10 10:24:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:24:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:24:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:24:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:24:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:24:45 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:24:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:24:46 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:24:46 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:24:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:24:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:24:47 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:24:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:24:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:24:48 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:24:48 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:24:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:24:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:24:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:24:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:24:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:24:51 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:24:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:24:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:24:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:24:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:24:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:24:54 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:24:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:24:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:24:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:24:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:24:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:24:58 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 10:24:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:25:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:00 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:25:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:02 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:25:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:03 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:25:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:04 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:25:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:06 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:25:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:25:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:25:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:25:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:25:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:10 [INFO] src.logger: DECISION: SKIP PSO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:25:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:11 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:11 [INFO] src.logger: DECISION: SKIP VKTX — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:25:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:12 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:25:13 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:25:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:25:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:25:14 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:25:14 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:25:14 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:25:14 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:25:14 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:25:14 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:25:14 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:29:43 EDT)" executed successfully
+2026-04-10 10:29:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:34:43 EDT)" (scheduled at 2026-04-10 10:29:43.430106-04:00)
+2026-04-10 10:29:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:34:43 EDT)" (scheduled at 2026-04-10 10:29:43.429908-04:00)
+2026-04-10 10:29:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:29:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:29:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:29:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:29:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:29:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:29:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:29:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:29:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:29:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:29:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:29:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:34:43 EDT)" executed successfully
+2026-04-10 10:29:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:29:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:29:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:29:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:29:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:29:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:29:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:29:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:29:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:29:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:29:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:29:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:29:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:29:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:29:48 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:29:48 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:29:49 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:29:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:29:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:29:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:51 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:29:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:29:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:52 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:29:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:29:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:53 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:29:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:29:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:55 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:29:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:29:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:57 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:29:57 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:29:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:29:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:29:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:29:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:29:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:30:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:30:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:30:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:30:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:30:02 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:30:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:30:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:30:03 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:30:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:30:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:05 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:30:05 [INFO] src.logger: DECISION: SKIP AGRO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:30:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:30:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:06 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:30:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:30:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:30:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:30:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:30:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:09 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:30:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:30:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:10 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:30:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:30:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:12 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:30:12 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:30:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:30:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:30:13 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:30:13 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:30:13 [ERROR] src.executor: Failed to update trailing stop for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:30:13 [ERROR] src.executor: Failed to update trailing stop for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:30:14 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:30:14 [ERROR] src.executor: Failed to update trailing stop for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:30:14 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:34:43 EDT)" executed successfully
+2026-04-10 10:34:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:39:43 EDT)" (scheduled at 2026-04-10 10:34:43.429908-04:00)
+2026-04-10 10:34:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:34:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:39:43 EDT)" (scheduled at 2026-04-10 10:34:43.430106-04:00)
+2026-04-10 10:34:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:34:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:34:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:34:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:34:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:34:44 [ERROR] src.executor: SELL failed for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:34:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:34:44 [ERROR] src.executor: SELL failed for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:34:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:34:44 [ERROR] src.executor: SELL failed for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:34:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:39:43 EDT)" executed successfully
+2026-04-10 10:34:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:34:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:34:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:34:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:34:46 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:34:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:34:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:34:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:34:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:34:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:34:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:34:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:34:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:34:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:34:48 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:34:48 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:34:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:34:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:34:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:34:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:51 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:34:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:34:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:34:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:34:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:54 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:34:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:34:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:55 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:34:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:34:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:57 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:34:57 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:34:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:34:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:34:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:34:58 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:34:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:35:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:35:01 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:35:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:35:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:02 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 10:35:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:35:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:35:04 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:35:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:35:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:06 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:35:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:35:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:35:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:35:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:35:09 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:35:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:35:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:11 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:35:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:35:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:13 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:35:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:35:15 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:15 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 10:35:15 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:35:16 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:35:16 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:35:16 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:35:16 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:35:16 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:39:43 EDT)" executed successfully
+2026-04-10 10:39:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:44:43 EDT)" (scheduled at 2026-04-10 10:39:43.429908-04:00)
+2026-04-10 10:39:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:39:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:44:43 EDT)" (scheduled at 2026-04-10 10:39:43.430106-04:00)
+2026-04-10 10:39:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:39:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:39:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:39:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:39:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:39:44 [ERROR] src.executor: SELL failed for QBTZ: {"available":"0","code":40310000,"existing_qty":"428","held_for_orders":"428","message":"insufficient qty available for order (requested: 428, available: 0)","related_orders":["55d157c2-217c-4e71-8312-fb741c8db1fc"],"symbol":"QBTZ"}
+2026-04-10 10:39:44 [ERROR] src.executor: SELL failed for RGTZ: {"available":"0","code":40310000,"existing_qty":"851","held_for_orders":"851","message":"insufficient qty available for order (requested: 851, available: 0)","related_orders":["c5b0806b-5fa1-430a-9655-bc807d2f953f"],"symbol":"RGTZ"}
+2026-04-10 10:39:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:39:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:39:44 [ERROR] src.executor: SELL failed for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:39:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:44:43 EDT)" executed successfully
+2026-04-10 10:39:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:39:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:39:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:39:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:39:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:39:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:39:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:39:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:39:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:39:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:39:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:39:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:39:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:39:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:39:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:39:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:39:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:39:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:39:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:39:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:39:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:39:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:39:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:39:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:54 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:39:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:39:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:55 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:39:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:39:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:57 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:39:57 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:39:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:39:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:39:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:39:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:39:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:40:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:40:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:40:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:40:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:40:02 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:40:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:40:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:40:04 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:40:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:40:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:05 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:40:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:40:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:40:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:40:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:40:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:40:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:40:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:10 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:40:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:40:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:11 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:40:11 [INFO] src.logger: DECISION: SKIP VKTX — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:40:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:40:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:12 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:40:12 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:40:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:40:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:40:13 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:40:13 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:40:13 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:40:13 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:44:43 EDT)" executed successfully
+2026-04-10 10:44:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:49:43 EDT)" (scheduled at 2026-04-10 10:44:43.429908-04:00)
+2026-04-10 10:44:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:44:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:49:43 EDT)" (scheduled at 2026-04-10 10:44:43.430106-04:00)
+2026-04-10 10:44:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:44:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:44:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:44:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:44:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:44:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:44:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:44:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:44:44 [ERROR] src.executor: SELL failed for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:44:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:49:43 EDT)" executed successfully
+2026-04-10 10:44:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:44:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:44:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:44:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:44:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:44:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:44:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:44:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:44:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:44:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:44:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:44:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:44:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:44:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:44:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:44:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:44:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:44:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:44:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:44:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:44:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:44:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:44:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:44:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:44:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:55 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:44:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:44:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:44:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:44:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:57 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 10:44:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:44:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:44:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:44:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:44:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:45:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:45:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:45:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:45:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:45:02 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:45:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:45:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:45:03 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:45:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:45:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:04 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:45:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:45:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:06 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:45:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:45:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:07 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:45:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:45:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:45:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:09 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:45:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:45:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:10 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:45:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:45:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:11 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:45:11 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:45:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:45:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:45:12 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:45:12 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:45:12 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:45:13 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:49:43 EDT)" executed successfully
+2026-04-10 10:49:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:54:43 EDT)" (scheduled at 2026-04-10 10:49:43.430106-04:00)
+2026-04-10 10:49:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:54:43 EDT)" (scheduled at 2026-04-10 10:49:43.429908-04:00)
+2026-04-10 10:49:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:49:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:49:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:49:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:49:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:49:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:49:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:49:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:49:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:49:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:49:44 [ERROR] src.executor: SELL failed for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:49:45 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:54:43 EDT)" executed successfully
+2026-04-10 10:49:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:49:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:49:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:49:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:49:46 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:49:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:49:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:49:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:49:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:49:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:49:48 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:49:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:49:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:49:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:49:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:49:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:49:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:49:51 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:49:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:49:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:49:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:49:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:49:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:49:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:55 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:49:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:49:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:49:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:49:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:57 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 10:49:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:49:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:49:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:49:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:49:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:50:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:50:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:50:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:50:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:02 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 10:50:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:50:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:50:03 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:50:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:50:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:04 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:50:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:50:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:05 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:50:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:50:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:07 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:50:07 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:50:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:50:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:50:08 [INFO] src.logger: DECISION: SKIP PSO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:50:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:50:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:09 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 10:50:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:50:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:11 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:50:11 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:50:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:50:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:50:12 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:50:12 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:50:12 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:50:12 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:54:43 EDT)" executed successfully
+2026-04-10 10:54:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:59:43 EDT)" (scheduled at 2026-04-10 10:54:43.429908-04:00)
+2026-04-10 10:54:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:54:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:59:43 EDT)" (scheduled at 2026-04-10 10:54:43.430106-04:00)
+2026-04-10 10:54:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:54:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:54:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:54:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:54:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:54:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:54:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:54:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:54:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:54:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:54:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:54:45 [ERROR] src.executor: SELL failed for WULF: {"available":"0","code":40310000,"existing_qty":"991","held_for_orders":"991","message":"insufficient qty available for order (requested: 991, available: 0)","related_orders":["c7b0ff29-c268-4dd6-8a55-0dd7eb5a6519"],"symbol":"WULF"}
+2026-04-10 10:54:45 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 10:59:43 EDT)" executed successfully
+2026-04-10 10:54:46 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:54:46 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:54:46 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:54:47 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:54:47 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:54:48 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:54:48 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:54:48 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:54:48 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:54:49 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:54:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:54:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:54:50 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:54:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:54:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:54:53 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:54:53 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:54:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:54:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:54:54 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:54:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:54:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:54:55 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:54:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:54:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:54:57 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:54:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:54:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:54:58 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:54:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:54:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:54:59 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 10:54:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:55:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:55:01 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:55:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 10:55:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:55:03 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:55:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 10:55:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:04 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 10:55:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 10:55:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:05 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:55:05 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:55:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 10:55:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:07 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 10:55:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 10:55:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:08 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 10:55:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 10:55:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:55:09 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:55:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 10:55:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:10 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 10:55:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 10:55:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:12 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:55:12 [INFO] src.logger: DECISION: SKIP VKTX — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:55:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 10:55:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:13 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:55:13 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:55:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 10:55:15 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:55:15 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 10:55:15 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 10:55:15 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 10:55:15 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 10:59:43 EDT)" executed successfully
+2026-04-10 10:59:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:04:43 EDT)" (scheduled at 2026-04-10 10:59:43.429908-04:00)
+2026-04-10 10:59:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 10:59:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:04:43 EDT)" (scheduled at 2026-04-10 10:59:43.430106-04:00)
+2026-04-10 10:59:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:59:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 10:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:59:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 10:59:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 10:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 10:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 10:59:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 10:59:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:04:43 EDT)" executed successfully
+2026-04-10 10:59:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 10:59:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 10:59:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 10:59:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 10:59:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 10:59:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 10:59:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 10:59:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 10:59:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 10:59:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 10:59:48 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 10:59:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 10:59:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 10:59:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 10:59:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 10:59:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 10:59:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:59:51 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:59:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 10:59:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 10:59:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 10:59:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:54 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 10:59:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 10:59:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:56 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 10:59:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 10:59:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:57 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 10:59:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 10:59:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 10:59:58 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 10:59:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 10:59:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 10:59:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:00:00 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:00:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 11:00:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:00:01 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:00:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 11:00:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:02 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 11:00:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 11:00:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:00:03 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:00:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 11:00:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:05 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 11:00:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 11:00:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:06 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 11:00:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 11:00:08 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:08 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:00:08 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:00:08 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 11:00:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:09 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 11:00:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 11:00:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:10 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:00:10 [INFO] src.logger: DECISION: SKIP VKTX — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:00:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 11:00:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:12 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 11:00:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 11:00:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:00:13 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 11:00:13 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 11:00:13 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 11:00:13 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:04:43 EDT)" executed successfully
+2026-04-10 11:04:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:09:43 EDT)" (scheduled at 2026-04-10 11:04:43.429908-04:00)
+2026-04-10 11:04:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 11:04:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:09:43 EDT)" (scheduled at 2026-04-10 11:04:43.430106-04:00)
+2026-04-10 11:04:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:04:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 11:04:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 11:04:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 11:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 11:04:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 11:04:45 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:09:43 EDT)" executed successfully
+2026-04-10 11:04:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 11:04:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 11:04:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 11:04:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 11:04:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 11:04:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 11:04:47 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 11:04:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 11:04:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 11:04:49 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 11:04:49 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 11:04:49 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 11:04:50 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 11:04:50 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 11:04:50 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 11:04:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 11:04:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:04:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:04:51 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:04:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 11:04:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:04:53 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 11:04:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 11:04:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:04:55 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 11:04:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 11:04:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:04:56 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 11:04:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 11:04:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:04:59 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 11:04:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 11:05:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:00 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 11:05:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 11:05:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:05:02 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:05:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 11:05:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:03 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:05:03 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:05:03 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 11:05:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:05 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 11:05:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 11:05:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:06 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:05:06 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:05:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 11:05:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:09 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 11:05:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 11:05:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:10 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 11:05:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 11:05:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:12 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:05:12 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:05:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 11:05:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:14 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 11:05:14 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 11:05:15 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:15 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 11:05:15 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 11:05:17 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:17 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 11:05:17 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 11:05:18 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:05:18 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 11:05:18 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 11:05:18 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 11:05:18 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:09:43 EDT)" executed successfully
+2026-04-10 11:09:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:14:43 EDT)" (scheduled at 2026-04-10 11:09:43.429908-04:00)
+2026-04-10 11:09:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 11:09:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:14:43 EDT)" (scheduled at 2026-04-10 11:09:43.430106-04:00)
+2026-04-10 11:09:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:09:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 11:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:09:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 11:09:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 11:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 11:09:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:14:43 EDT)" executed successfully
+2026-04-10 11:09:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 11:09:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 11:09:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 11:09:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 11:09:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 11:09:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 11:09:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 11:09:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 11:09:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 11:09:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 11:09:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 11:09:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 11:09:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 11:09:48 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 11:09:48 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 11:09:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 11:09:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 11:09:50 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:50 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:09:50 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:09:50 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 11:09:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 11:09:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 11:09:53 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:53 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 11:09:53 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 11:09:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:54 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 11:09:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 11:09:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 11:09:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 11:09:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:57 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:09:57 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:09:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 11:09:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:09:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:09:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:09:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 11:10:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:02 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:10:02 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:10:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 11:10:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:10:04 [INFO] src.logger: DECISION: SKIP QBTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:10:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 11:10:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:05 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:10:05 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:10:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 11:10:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:06 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 11:10:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 11:10:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 11:10:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 11:10:12 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:13 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:10:13 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:10:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 11:10:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:14 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 11:10:14 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 11:10:15 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:15 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 11:10:15 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 11:10:17 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:17 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:10:17 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:10:17 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 11:10:18 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:10:18 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 11:10:18 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 11:10:18 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 11:10:18 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:14:43 EDT)" executed successfully
+2026-04-10 11:14:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:19:43 EDT)" (scheduled at 2026-04-10 11:14:43.429908-04:00)
+2026-04-10 11:14:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 11:14:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:19:43 EDT)" (scheduled at 2026-04-10 11:14:43.430106-04:00)
+2026-04-10 11:14:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:14:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 11:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:14:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 11:14:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 11:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 11:14:44 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:19:43 EDT)" executed successfully
+2026-04-10 11:14:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 11:14:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 11:14:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 11:14:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 11:14:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 11:14:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 11:14:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 11:14:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 11:14:47 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 11:14:47 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 11:14:47 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 11:14:47 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 11:14:48 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 11:14:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 11:14:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 11:14:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 11:14:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 11:14:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:14:51 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:14:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 11:14:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 11:14:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 11:14:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:54 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 11:14:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 11:14:55 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:55 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 11:14:55 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 11:14:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:56 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 11:14:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 11:14:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:58 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:14:58 [INFO] src.logger: DECISION: SKIP NIO — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:14:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 11:14:59 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:14:59 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:14:59 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:14:59 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 11:15:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:15:00 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:15:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 11:15:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:02 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 11:15:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 11:15:03 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:15:04 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:15:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 11:15:06 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:06 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 11:15:06 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 11:15:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 11:15:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 11:15:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:15:09 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:15:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 11:15:10 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:10 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 11:15:10 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 11:15:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:12 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:15:12 [INFO] src.logger: DECISION: SKIP VKTX — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:15:12 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 11:15:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:13 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:15:13 [INFO] src.logger: DECISION: SKIP VSNT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:15:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 11:15:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:15:14 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 11:15:14 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 11:15:14 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 11:15:14 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:19:43 EDT)" executed successfully
+2026-04-10 11:19:43 [INFO] apscheduler.executors.default: Running job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:24:43 EDT)" (scheduled at 2026-04-10 11:19:43.430106-04:00)
+2026-04-10 11:19:43 [INFO] apscheduler.executors.default: Running job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:24:43 EDT)" (scheduled at 2026-04-10 11:19:43.429908-04:00)
+2026-04-10 11:19:43 [INFO] __main__: --- Scan cycle ---
+2026-04-10 11:19:43 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/GLXY/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/QBTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:19:44 [INFO] src.scanner: SIGNAL: WULF score=85.3 sources=['mid_cap_breakout', 'top_gainers', 'high_short_interest']
+2026-04-10 11:19:44 [INFO] src.scanner: SIGNAL: NBIS score=88.2 sources=['top_gainers', 'high_short_interest']
+2026-04-10 11:19:44 [INFO] src.scanner: SIGNAL: SNXX score=88.9 sources=['top_gainers', 'gap_up']
+2026-04-10 11:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/RGTZ/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:19:44 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/list?limit=1 "HTTP/1.1 404 Not Found"
+2026-04-10 11:19:45 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/VIAV/v1 "HTTP/1.1 402 Payment Required"
+2026-04-10 11:19:45 [INFO] src.scanner: SIGNAL: MPLT score=80.8 sources=['top_gainers', 'insider_buying']
+2026-04-10 11:19:45 [INFO] src.scanner: SIGNAL: QBTZ score=82.0 sources=['top_gainers', 'gap_up']
+2026-04-10 11:19:45 [INFO] httpx: HTTP Request: GET https://lunarcrush.com/api4/public/coins/WULF/v1 "HTTP/1.1 429 Too Many Requests"
+2026-04-10 11:19:45 [INFO] src.scanner: SIGNAL: NIO score=85.4 sources=['gap_up']
+2026-04-10 11:19:45 [INFO] apscheduler.executors.default: Job "Exit condition check (trigger: interval[0:05:00], next run at: 2026-04-10 11:24:43 EDT)" executed successfully
+2026-04-10 11:19:45 [INFO] src.scanner: SIGNAL: GLXY score=95.6 sources=['top_gainers']
+2026-04-10 11:19:45 [INFO] src.scanner: SIGNAL: VIAV score=75.6 sources=['mid_cap_breakout']
+2026-04-10 11:19:46 [INFO] src.scanner: SIGNAL: TTE score=70.9 sources=['gap_up']
+2026-04-10 11:19:46 [INFO] src.scanner: SIGNAL: RGTZ score=82.6 sources=['gap_up']
+2026-04-10 11:19:48 [INFO] src.scanner: SIGNAL: AGRO score=77.5 sources=['gap_up']
+2026-04-10 11:19:48 [INFO] src.scanner: SIGNAL: PSO score=74.5 sources=['mid_cap_breakout']
+2026-04-10 11:19:48 [INFO] src.scanner: SIGNAL: VKTX score=73.8 sources=['mid_cap_breakout']
+2026-04-10 11:19:48 [INFO] src.scanner: SIGNAL: NBIG score=88.6 sources=['top_gainers']
+2026-04-10 11:19:49 [INFO] src.scanner: SIGNAL: NEBX score=88.3 sources=['top_gainers']
+2026-04-10 11:19:49 [INFO] src.scanner: SIGNAL: VSNT score=72.5 sources=['mid_cap_breakout']
+2026-04-10 11:19:49 [INFO] src.scanner: SIGNAL: IRD score=76.6 sources=['top_gainers']
+2026-04-10 11:19:49 [INFO] __main__: Momentum candidates: ['GLXY', 'SNXX', 'NBIG', 'NEBX', 'NBIS', 'NIO', 'WULF', 'RGTZ', 'QBTZ', 'MPLT', 'AGRO', 'IRD', 'VIAV', 'PSO', 'VKTX', 'VSNT', 'TTE']
+2026-04-10 11:19:49 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for GLXY
+2026-04-10 11:19:51 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:19:51 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:19:51 [INFO] src.logger: DECISION: SKIP GLXY — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:19:51 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for SNXX
+2026-04-10 11:19:52 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:19:52 [INFO] src.logger: DECISION: SKIP SNXX — Sentiment not confirmed
+2026-04-10 11:19:52 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIG
+2026-04-10 11:19:54 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:19:54 [INFO] src.logger: DECISION: SKIP NBIG — Sentiment not confirmed
+2026-04-10 11:19:54 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NEBX
+2026-04-10 11:19:56 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:19:56 [INFO] src.logger: DECISION: SKIP NEBX — Sentiment not confirmed
+2026-04-10 11:19:56 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NBIS
+2026-04-10 11:19:57 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:19:57 [INFO] src.logger: DECISION: SKIP NBIS — Sentiment not confirmed
+2026-04-10 11:19:57 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for NIO
+2026-04-10 11:19:58 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:19:58 [INFO] src.logger: DECISION: SKIP NIO — Sentiment not confirmed
+2026-04-10 11:19:58 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for WULF
+2026-04-10 11:20:00 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:00 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:20:00 [INFO] src.logger: DECISION: SKIP WULF — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:20:00 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for RGTZ
+2026-04-10 11:20:01 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:01 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:20:01 [INFO] src.logger: DECISION: SKIP RGTZ — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:20:01 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for QBTZ
+2026-04-10 11:20:02 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:02 [INFO] src.logger: DECISION: SKIP QBTZ — Sentiment not confirmed
+2026-04-10 11:20:02 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for MPLT
+2026-04-10 11:20:04 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:04 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:20:04 [INFO] src.logger: DECISION: SKIP MPLT — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:20:04 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for AGRO
+2026-04-10 11:20:05 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:05 [INFO] src.logger: DECISION: SKIP AGRO — Sentiment not confirmed
+2026-04-10 11:20:05 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for IRD
+2026-04-10 11:20:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed
+2026-04-10 11:20:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV
+2026-04-10 11:20:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment
+2026-04-10 11:20:09 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)
+2026-04-10 11:20:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO
+2026-04-10 11:20:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:11 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed
+2026-04-10 11:20:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX
+2026-04-10 11:20:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:13 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed
+2026-04-10 11:20:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT
+2026-04-10 11:20:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:14 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed
+2026-04-10 11:20:14 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE
+2026-04-10 11:20:16 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-04-10 11:20:16 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed
+2026-04-10 11:20:16 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}
+2026-04-10 11:20:16 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}
+2026-04-10 11:20:16 [INFO] apscheduler.executors.default: Job "Scan and execute cycle (trigger: interval[0:05:00], next run at: 2026-04-10 11:24:43 EDT)" executed successfully

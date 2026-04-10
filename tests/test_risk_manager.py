@@ -135,7 +135,8 @@ class TestCircuitBreakers:
         assert result["halted"] is True
         assert result["weekly_halt"] is True
 
-    def test_lc_unavailable_halts(self, mock_ds):
+    def test_lc_unavailable_does_not_halt(self, mock_ds):
+        """LC being down no longer halts trading — Haiku backup handles sentiment."""
         from src.risk_manager import RiskManager
 
         mock_ds.lunarcrush.is_available.return_value = False
@@ -144,7 +145,7 @@ class TestCircuitBreakers:
         with patch.object(rm, '_in_trading_window', return_value=True):
             result = rm.check_circuit_breakers()
 
-        assert result["halted"] is True
+        assert result["halted"] is False
         assert result["lc_available"] is False
 
     def test_outside_trading_window_halts(self, mock_ds):

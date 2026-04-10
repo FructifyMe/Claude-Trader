@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="30">
+<title>Auto-Trader Dashboard</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:#0f172a; color:#e2e8f0; padding:24px; }
+  .header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .header h1 { font-size:24px; font-weight:700; }
+  .header h1 span { color:#3b82f6; }
+  .status { display:flex; align-items:center; gap:8px; font-size:14px; }
+  .status-dot { width:10px; height:10px; border-radius:50%; background:#22c55e; }
+  .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
+  .card { background:#1e293b; border-radius:12px; padding:20px; }
+  .card .label { font-size:12px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .card .value { font-size:28px; font-weight:700; }
+  .card .sub { font-size:13px; color:#94a3b8; margin-top:4px; }
+  .section { background:#1e293b; border-radius:12px; padding:20px; margin-bottom:16px; }
+  .section h2 { font-size:16px; font-weight:600; margin-bottom:12px; color:#f8fafc; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th { text-align:left; padding:8px 12px; color:#94a3b8; font-weight:500; font-size:12px;
+       text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid #334155; }
+  td { padding:8px 12px; border-bottom:1px solid #1e293b; }
+  .log-box { background:#0f172a; border-radius:8px; padding:12px; max-height:250px; overflow-y:auto;
+              font-family:'Cascadia Code','Fira Code',monospace; font-size:12px; line-height:1.6; }
+  .log-line { color:#94a3b8; }
+  .footer { text-align:center; color:#475569; font-size:12px; margin-top:24px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1><span>Auto-Trader</span> Dashboard</h1>
+    <div class="status">
+      <div class="status-dot"></div>
+      <span>Running</span>
+      <span style="color:#475569">| Updated 2026-04-10 11:20:16</span>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="label">Portfolio Value</div>
+      <div class="value">$100,516.65</div>
+      <div class="sub">Paper Trading</div>
+    </div>
+    <div class="card">
+      <div class="label">Total P&L</div>
+      <div class="value" style="color:#22c55e">$516.65</div>
+      <div class="sub" style="color:#22c55e">+0.52%</div>
+    </div>
+    <div class="card">
+      <div class="label">Cash Available</div>
+      <div class="value">$193.01</div>
+      <div class="sub">5 open positions</div>
+    </div>
+    <div class="card">
+      <div class="label">Trades Today</div>
+      <div class="value">7</div>
+      <div class="sub">7 total</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Open Positions</h2>
+    <table>
+      <tr><th>Symbol</th><th>Shares</th><th>Entry</th><th>Current</th><th>P&L</th></tr>
+      
+        <tr>
+          <td style="font-weight:600">GLXY</td>
+          <td>923</td>
+          <td>$21.60</td>
+          <td>$22.40</td>
+          <td style="color:#22c55e;font-weight:600">$738.40 (3.7%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">QBTZ</td>
+          <td>428</td>
+          <td>$46.63</td>
+          <td>$47.00</td>
+          <td style="color:#22c55e;font-weight:600">$158.36 (0.8%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">RGTZ</td>
+          <td>851</td>
+          <td>$23.49</td>
+          <td>$23.57</td>
+          <td style="color:#22c55e;font-weight:600">$68.08 (0.3%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">VIAV</td>
+          <td>468</td>
+          <td>$42.68</td>
+          <td>$42.78</td>
+          <td style="color:#22c55e;font-weight:600">$46.80 (0.2%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">WULF</td>
+          <td>991</td>
+          <td>$20.09</td>
+          <td>$19.63</td>
+          <td style="color:#ef4444;font-weight:600">$-455.86 (-2.3%)</td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Trade History</h2>
+    <table>
+      <tr><th>Time</th><th>Action</th><th>Symbol</th><th>Shares</th><th>Price</th><th>P&L</th><th>Reason</th></tr>
+      
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:59:46</td>
+          <td><span style="color:#f59e0b;font-weight:600">SELL</span></td>
+          <td style="font-weight:600">MPLT</td>
+          <td>596.0</td>
+          <td>$24.83</td>
+          <td><span style="color:#22c55e">$0.00</span></td>
+          <td style="color:#94a3b8;font-size:12px">trailing_stop</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:55:16</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">VIAV</td>
+          <td>468</td>
+          <td>$42.68</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:55:16</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">MPLT</td>
+          <td>596</td>
+          <td>$33.51</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:55:16</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">QBTZ</td>
+          <td>428</td>
+          <td>$46.63</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:55:16</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">RGTZ</td>
+          <td>851</td>
+          <td>$23.49</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:55:16</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">WULF</td>
+          <td>991</td>
+          <td>$20.17</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T09:55:16</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">GLXY</td>
+          <td>923</td>
+          <td>$21.66</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Scanner Decisions</h2>
+    <table>
+      <tr><th>Time</th><th>Decision</th><th>Symbol</th><th>Reason</th></tr>
+      
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:16</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">TTE</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:14</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">VSNT</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:13</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">VKTX</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:11</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">PSO</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:09</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">VIAV</td>
+          <td>Risk rejected: Max positions reached (5/5)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:07</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">IRD</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:05</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">AGRO</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:04</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">MPLT</td>
+          <td>Risk rejected: Max positions reached (5/5)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:02</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">QBTZ</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:01</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">RGTZ</td>
+          <td>Risk rejected: Max positions reached (5/5)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:20:00</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">WULF</td>
+          <td>Risk rejected: Max positions reached (5/5)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:19:58</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">NIO</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:19:57</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">NBIS</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:19:56</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">NEBX</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-10T11:19:54</td>
+          <td style="color:#94a3b8">SKIP</td>
+          <td style="font-weight:600">NBIG</td>
+          <td>Sentiment not confirmed</td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Bot Log</h2>
+    <div class="log-box">
+      <div class='log-line'>2026-04-10 11:20:07 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"</div>
+<div class='log-line'>2026-04-10 11:20:07 [INFO] src.logger: DECISION: SKIP IRD — Sentiment not confirmed</div>
+<div class='log-line'>2026-04-10 11:20:07 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VIAV</div>
+<div class='log-line'>2026-04-10 11:20:09 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"</div>
+<div class='log-line'>2026-04-10 11:20:09 [INFO] src.risk_manager: LunarCrush unavailable — Claude Haiku will handle sentiment</div>
+<div class='log-line'>2026-04-10 11:20:09 [INFO] src.logger: DECISION: SKIP VIAV — Risk rejected: Max positions reached (5/5)</div>
+<div class='log-line'>2026-04-10 11:20:09 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for PSO</div>
+<div class='log-line'>2026-04-10 11:20:11 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"</div>
+<div class='log-line'>2026-04-10 11:20:11 [INFO] src.logger: DECISION: SKIP PSO — Sentiment not confirmed</div>
+<div class='log-line'>2026-04-10 11:20:11 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VKTX</div>
+<div class='log-line'>2026-04-10 11:20:13 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"</div>
+<div class='log-line'>2026-04-10 11:20:13 [INFO] src.logger: DECISION: SKIP VKTX — Sentiment not confirmed</div>
+<div class='log-line'>2026-04-10 11:20:13 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for VSNT</div>
+<div class='log-line'>2026-04-10 11:20:14 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"</div>
+<div class='log-line'>2026-04-10 11:20:14 [INFO] src.logger: DECISION: SKIP VSNT — Sentiment not confirmed</div>
+<div class='log-line'>2026-04-10 11:20:14 [INFO] src.sentiment: LunarCrush unavailable — using Claude Haiku for TTE</div>
+<div class='log-line'>2026-04-10 11:20:16 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"</div>
+<div class='log-line'>2026-04-10 11:20:16 [INFO] src.logger: DECISION: SKIP TTE — Sentiment not confirmed</div>
+<div class='log-line'>2026-04-10 11:20:16 [ERROR] src.executor: Failed to update trailing stop for GLXY: {"available":"0","code":40310000,"existing_qty":"923","held_for_orders":"923","message":"insufficient qty available for order (requested: 923, available: 0)","related_orders":["36d78dab-c551-4b6c-aef9-5f6fd4d008b7"],"symbol":"GLXY"}</div>
+<div class='log-line'>2026-04-10 11:20:16 [ERROR] src.executor: Failed to update trailing stop for VIAV: {"available":"0","code":40310000,"existing_qty":"468","held_for_orders":"468","message":"insufficient qty available for order (requested: 468, available: 0)","related_orders":["6c90a518-4700-4bae-90fd-e4f476f73df4"],"symbol":"VIAV"}</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Auto-refreshes every 30 seconds | Auto-Trader Bot v1.0 | Paper Trading Mode
+  </div>
+</body>
+</html>

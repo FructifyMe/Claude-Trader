@@ -4,7 +4,8 @@ import logging
 from datetime import datetime, timedelta
 from typing import Optional
 
-from alpaca.trading.enums import OrderSide, TimeInForce
+from alpaca.trading.enums import OrderSide, TimeInForce, OrderClass
+from alpaca.trading.requests import LimitOrderRequest, StopLossRequest
 
 from src.data_client import DataService
 
@@ -36,31 +37,28 @@ class Executor:
         stop_price = signal["stop_price"]
 
         try:
-            # Place limit buy
-            order_id = self.ds.alpaca.submit_limit_order(
+            # Use bracket order (OTO) — stop-loss only activates after buy fills
+            bracket_request = LimitOrderRequest(
                 symbol=symbol,
                 qty=shares,
                 side=OrderSide.BUY,
+                type="limit",
+                time_in_force=TimeInForce.DAY,
                 limit_price=round(entry_price, 2),
+                order_class=OrderClass.OTO,
+                stop_loss=StopLossRequest(stop_price=round(stop_price, 2)),
             )
-
-            # Place stop-loss
-            stop_limit = round(stop_price * 0.995, 2)  # Slight buffer below stop
-            stop_order_id = self.ds.alpaca.submit_stop_order(
-                symbol=symbol,
-                qty=shares,
-                stop_price=round(stop_price, 2),
-                limit_price=stop_limit,
-            )
+            order = self.ds.alpaca.trading.submit_order(bracket_request)
+            order_id = str(order.id)
 
             # Track state
-            self._stop_orders[symbol] = stop_order_id
+            self._stop_orders[symbol] = "bracket"  # managed by Alpaca
             self._high_water[symbol] = entry_price
             self._entry_times[symbol] = datetime.now()
             self._entry_prices[symbol] = entry_price
             self._half_sold[symbol] = False
 
-            log.info(f"EXECUTED BUY: {shares} {symbol} @ {entry_price:.2f}, stop @ {stop_price:.2f}")
+            log.info(f"EXECUTED BUY: {shares} {symbol} @ {entry_price:.2f}, stop @ {stop_price:.2f} (bracket)")
 
             return {
                 "success": True,
@@ -70,7 +68,7 @@ class Executor:
                 "entry_price": entry_price,
                 "stop_price": stop_price,
                 "order_id": order_id,
-                "stop_order_id": stop_order_id,
+                "stop_order_id": "bracket",
             }
 
         except Exception as e:
