@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="30">
+<title>Auto-Trader Dashboard</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',system-ui,-apple-system,sans-serif; background:#0f172a; color:#e2e8f0; padding:24px; }
+  .header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .header h1 { font-size:24px; font-weight:700; }
+  .header h1 span { color:#3b82f6; }
+  .status { display:flex; align-items:center; gap:8px; font-size:14px; }
+  .status-dot { width:10px; height:10px; border-radius:50%; background:#22c55e; }
+  .cards { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
+  .card { background:#1e293b; border-radius:12px; padding:20px; }
+  .card .label { font-size:12px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .card .value { font-size:28px; font-weight:700; }
+  .card .sub { font-size:13px; color:#94a3b8; margin-top:4px; }
+  .section { background:#1e293b; border-radius:12px; padding:20px; margin-bottom:16px; }
+  .section h2 { font-size:16px; font-weight:600; margin-bottom:12px; color:#f8fafc; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th { text-align:left; padding:8px 12px; color:#94a3b8; font-weight:500; font-size:12px;
+       text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid #334155; }
+  td { padding:8px 12px; border-bottom:1px solid #1e293b; }
+  .log-box { background:#0f172a; border-radius:8px; padding:12px; max-height:250px; overflow-y:auto;
+              font-family:'Cascadia Code','Fira Code',monospace; font-size:12px; line-height:1.6; }
+  .log-line { color:#94a3b8; }
+  .footer { text-align:center; color:#475569; font-size:12px; margin-top:24px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1><span>Auto-Trader</span> Dashboard</h1>
+    <div class="status">
+      <div class="status-dot"></div>
+      <span class="status-label">Running</span>
+      <span style="color:#475569">| Updated 2026-05-01 15:45:25</span>
+    </div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="label">Portfolio Value</div>
+      <div class="value">$105,813.40</div>
+      <div class="sub">Paper Trading</div>
+    </div>
+    <div class="card">
+      <div class="label">Total P&L</div>
+      <div class="value" style="color:#22c55e">$5,813.40</div>
+      <div class="sub" style="color:#22c55e">+5.81%</div>
+    </div>
+    <div class="card">
+      <div class="label">Cash Available</div>
+      <div class="value">$1,109.65</div>
+      <div class="sub">12 open positions</div>
+    </div>
+    <div class="card">
+      <div class="label">Trades Today</div>
+      <div class="value">6</div>
+      <div class="sub">30 total</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Open Positions</h2>
+    <table>
+      <tr><th>Symbol</th><th>Shares</th><th>Entry</th><th>Current</th><th>P&L</th></tr>
+      
+        <tr>
+          <td style="font-weight:600">ABVX</td>
+          <td>40</td>
+          <td>$116.66</td>
+          <td>$118.22</td>
+          <td style="color:#22c55e;font-weight:600">$62.40 (1.3%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">CLOU</td>
+          <td>38</td>
+          <td>$19.66</td>
+          <td>$21.08</td>
+          <td style="color:#22c55e;font-weight:600">$53.96 (7.2%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">CVBF</td>
+          <td>907</td>
+          <td>$20.48</td>
+          <td>$20.45</td>
+          <td style="color:#ef4444;font-weight:600">$-22.68 (-0.1%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">GDX</td>
+          <td>53</td>
+          <td>$88.73</td>
+          <td>$87.28</td>
+          <td style="color:#ef4444;font-weight:600">$-76.58 (-1.6%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">GDXJ</td>
+          <td>40</td>
+          <td>$117.21</td>
+          <td>$115.84</td>
+          <td style="color:#ef4444;font-weight:600">$-54.78 (-1.2%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">IAC</td>
+          <td>413</td>
+          <td>$44.97</td>
+          <td>$45.02</td>
+          <td style="color:#22c55e;font-weight:600">$22.71 (0.1%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">IHAK</td>
+          <td>106</td>
+          <td>$42.48</td>
+          <td>$47.86</td>
+          <td style="color:#22c55e;font-weight:600">$570.22 (12.7%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">LNC</td>
+          <td>502</td>
+          <td>$37.00</td>
+          <td>$37.60</td>
+          <td style="color:#22c55e;font-weight:600">$303.71 (1.6%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">PSQ</td>
+          <td>645</td>
+          <td>$28.78</td>
+          <td>$27.60</td>
+          <td style="color:#ef4444;font-weight:600">$-761.10 (-4.1%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">TTE</td>
+          <td>8</td>
+          <td>$86.38</td>
+          <td>$92.94</td>
+          <td style="color:#22c55e;font-weight:600">$52.44 (7.6%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">UUP</td>
+          <td>329</td>
+          <td>$27.53</td>
+          <td>$27.40</td>
+          <td style="color:#ef4444;font-weight:600">$-42.77 (-0.5%)</td>
+        </tr>
+        <tr>
+          <td style="font-weight:600">XOVR</td>
+          <td>67</td>
+          <td>$17.07</td>
+          <td>$18.73</td>
+          <td style="color:#22c55e;font-weight:600">$111.56 (9.8%)</td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Trade History</h2>
+    <table>
+      <tr><th>Time</th><th>Action</th><th>Symbol</th><th>Shares</th><th>Price</th><th>P&L</th><th>Reason</th></tr>
+      
+        <tr>
+          <td style="color:#94a3b8">2026-05-01T10:00:48</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">ABVX</td>
+          <td>40</td>
+          <td>$118.54</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-05-01T10:00:48</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">SNDU</td>
+          <td>72</td>
+          <td>$65.99</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-05-01T10:00:47</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">GDX</td>
+          <td>53</td>
+          <td>$88.73</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-05-01T10:00:46</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">GDXJ</td>
+          <td>40</td>
+          <td>$117.25</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-05-01T10:00:45</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">SOXL</td>
+          <td>37</td>
+          <td>$128.62</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-05-01T10:00:44</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">NUGT</td>
+          <td>27</td>
+          <td>$176.96</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-29T09:50:13</td>
+          <td><span style="color:#f59e0b;font-weight:600">SELL</span></td>
+          <td style="font-weight:600">IHAK</td>
+          <td>106</td>
+          <td>$46.77</td>
+          <td><span style="color:#22c55e">$454.68</span></td>
+          <td style="color:#94a3b8;font-size:12px">profit_target</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-27T13:15:10</td>
+          <td><span style="color:#f59e0b;font-weight:600">SELL</span></td>
+          <td style="font-weight:600">XOVR</td>
+          <td>66</td>
+          <td>$18.77</td>
+          <td><span style="color:#22c55e">$112.20</span></td>
+          <td style="color:#94a3b8;font-size:12px">profit_target</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-24T13:10:10</td>
+          <td><span style="color:#f59e0b;font-weight:600">SELL</span></td>
+          <td style="font-weight:600">XOVR</td>
+          <td>132</td>
+          <td>$18.77</td>
+          <td><span style="color:#22c55e">$224.40</span></td>
+          <td style="color:#94a3b8;font-size:12px">profit_target</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-23T11:55:11</td>
+          <td><span style="color:#f59e0b;font-weight:600">SELL</span></td>
+          <td style="font-weight:600">ARX</td>
+          <td>1238.0</td>
+          <td>$15.28</td>
+          <td><span style="color:#22c55e">$334.26</span></td>
+          <td style="color:#94a3b8;font-size:12px">trailing_stop</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-22T09:45:15</td>
+          <td><span style="color:#f59e0b;font-weight:600">SELL</span></td>
+          <td style="font-weight:600">XOVR</td>
+          <td>264</td>
+          <td>$18.94</td>
+          <td><span style="color:#22c55e">$493.68</span></td>
+          <td style="color:#94a3b8;font-size:12px">profit_target</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:13</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">EXTR</td>
+          <td>968</td>
+          <td>$19.20</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:11</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">IAC</td>
+          <td>413</td>
+          <td>$44.97</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:10</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">LNC</td>
+          <td>502</td>
+          <td>$37.00</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:09</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">CVBF</td>
+          <td>907</td>
+          <td>$20.50</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:08</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">ARX</td>
+          <td>1238</td>
+          <td>$15.01</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:07</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">PSQ</td>
+          <td>645</td>
+          <td>$28.79</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:05</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">QID</td>
+          <td>1030</td>
+          <td>$18.05</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-21T12:07:02</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">FHB</td>
+          <td>683</td>
+          <td>$27.21</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:24</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">RDWU</td>
+          <td>59</td>
+          <td>$12.79</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:22</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">CLBT</td>
+          <td>58</td>
+          <td>$13.04</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:21</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">ORKA</td>
+          <td>11</td>
+          <td>$67.65</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:19</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">TTE</td>
+          <td>8</td>
+          <td>$86.76</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:17</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">CLOU</td>
+          <td>38</td>
+          <td>$19.67</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:15</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">BWIN</td>
+          <td>30</td>
+          <td>$24.80</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:12</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">AMKR</td>
+          <td>10</td>
+          <td>$68.58</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:10</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">SRAD</td>
+          <td>41</td>
+          <td>$18.00</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:08</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">NN</td>
+          <td>33</td>
+          <td>$22.41</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:07</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">LITX</td>
+          <td>17</td>
+          <td>$43.87</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">2026-04-17T13:12:05</td>
+          <td><span style="color:#3b82f6;font-weight:600">BUY</span></td>
+          <td style="font-weight:600">LUNL</td>
+          <td>31</td>
+          <td>$23.83</td>
+          <td></td>
+          <td style="color:#94a3b8;font-size:12px"></td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Scanner Decisions</h2>
+    <table>
+      <tr><th>Time</th><th>Symbol</th><th>Score</th><th>RSI</th><th>Vol</th><th>MACD</th><th>SMA</th><th>Screens</th><th>Sentiment</th><th>AI Reason</th><th>Result</th></tr>
+      
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:23</td>
+          <td style="font-weight:600">FRT</td>
+          <td style="color:#22c55e;font-weight:600">80.1</td>
+          <td>71</td>
+          <td style="color:#f59e0b">1.4x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="momentum breakout ">momentum breakout </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="FRT exhibits textbook momentum setup with 80.1 momentum score, bullish MACD crossover, above 20-day SMA in uptrend, elevated volume (1.4x), positive relative strength vs SPY, and +29.8% 5-day return—multiple confirming signals with mechanical risk control via stop-losses make this a strong 1-5 day swing trade entry.">FRT exhibits textbook momentum setup with 80.1 momentum score, bullish MACD crossover, above 20-day SMA in uptrend, elevated volume (1.4x), positive relative strength vs SPY, and +29.8% 5-day return—multiple confirming signals with mechanical risk control via stop-losses make this a strong 1-5 day swing trade entry.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:19</td>
+          <td style="font-weight:600">ESE</td>
+          <td style="color:#22c55e;font-weight:600">81.0</td>
+          <td>69</td>
+          <td style="color:#f59e0b">1.2x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="mid cap breakout ">mid cap breakout </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="ESE exhibits textbook momentum setup with 81/100 momentum score, bullish MACD crossover, price above 20-day SMA in confirmed uptrend, elevated volume (1.2x), outperformance vs SPY (+6.2%), and mid-cap breakout screen confirmation—all classic swing trade entry signals with mechanical risk controls in place.">ESE exhibits textbook momentum setup with 81/100 momentum score, bullish MACD crossover, price above 20-day SMA in confirmed uptrend, elevated volume (1.2x), outperformance vs SPY (+6.2%), and mid-cap breakout screen confirmation—all classic swing trade entry signals with mechanical risk controls in place.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:16</td>
+          <td style="font-weight:600">GDX</td>
+          <td style="color:#22c55e;font-weight:600">81.7</td>
+          <td>68</td>
+          <td style="color:#94a3b8">0.7x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="gap up ">gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (81.7), bullish MACD crossover, price above 20-day SMA with exceptional relative strength (+34.1%) and gap-up screen confirmation outweigh the slightly below-average volume in a trending environment with mechanical risk controls.">Strong momentum score (81.7), bullish MACD crossover, price above 20-day SMA with exceptional relative strength (+34.1%) and gap-up screen confirmation outweigh the slightly below-average volume in a trending environment with mechanical risk controls.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:13</td>
+          <td style="font-weight:600">ABVX</td>
+          <td style="color:#22c55e;font-weight:600">81.9</td>
+          <td>67</td>
+          <td style="color:#94a3b8">0.8x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="top gainers, gap up ">top gainers, gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (81.9), bullish MACD, price above 20-day SMA, exceptional 5-day return (+81.2%), and outperformance vs SPY (+50%) confirm uptrend, though volume ratio of 0.8x is slightly below ideal threshold for institutional confirmation.">Strong momentum score (81.9), bullish MACD, price above 20-day SMA, exceptional 5-day return (+81.2%), and outperformance vs SPY (+50%) confirm uptrend, though volume ratio of 0.8x is slightly below ideal threshold for institutional confirmation.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:10</td>
+          <td style="font-weight:600">NTRA</td>
+          <td style="color:#22c55e;font-weight:600">82.5</td>
+          <td>70</td>
+          <td style="color:#f59e0b">1.0x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="top gainers ">top gainers </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (82.5), bullish MACD crossover, price above 20-day SMA with exceptional 60.3% 5-day return and 50% outperformance vs SPY confirm robust uptrend with institutional participation, ideal for 1-5 day swing entry with mechanical risk controls in place.">Strong momentum score (82.5), bullish MACD crossover, price above 20-day SMA with exceptional 60.3% 5-day return and 50% outperformance vs SPY confirm robust uptrend with institutional participation, ideal for 1-5 day swing entry with mechanical risk controls in place.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:08</td>
+          <td style="font-weight:600">GDXJ</td>
+          <td style="color:#22c55e;font-weight:600">82.5</td>
+          <td>63</td>
+          <td style="color:#94a3b8">0.8x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="gap up ">gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (7/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (82.5), bullish MACD crossover, price above 20-day SMA, and exceptional 5-day outperformance (+100%) confirm uptrend, though volume ratio of 0.8x is slightly below ideal threshold for institutional confirmation.">Strong momentum score (82.5), bullish MACD crossover, price above 20-day SMA, and exceptional 5-day outperformance (+100%) confirm uptrend, though volume ratio of 0.8x is slightly below ideal threshold for institutional confirmation.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:05</td>
+          <td style="font-weight:600">SOXL</td>
+          <td style="color:#22c55e;font-weight:600">83.9</td>
+          <td>58</td>
+          <td style="color:#f59e0b">1.0x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="top gainers, gap up ">top gainers, gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="SOXL shows textbook momentum setup with 83.9 momentum score, bullish MACD crossover, strong relative strength (+48.7%), multiple screen hits, price above SMA in confirmed uptrend, and tight risk management via stops mitigates downside risk.">SOXL shows textbook momentum setup with 83.9 momentum score, bullish MACD crossover, strong relative strength (+48.7%), multiple screen hits, price above SMA in confirmed uptrend, and tight risk management via stops mitigates downside risk.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:45:02</td>
+          <td style="font-weight:600">PATK</td>
+          <td style="color:#22c55e;font-weight:600">86.0</td>
+          <td>68</td>
+          <td style="color:#f59e0b">1.2x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="unusual volume ">unusual volume </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (86/100), bullish MACD crossover, price above 20-day SMA in confirmed uptrend, elevated volume (1.2x), significant outperformance vs SPY (+16.1%), and unusual_volume screen confirmation create a compelling swing trade setup with defined risk management.">Strong momentum score (86/100), bullish MACD crossover, price above 20-day SMA in confirmed uptrend, elevated volume (1.2x), significant outperformance vs SPY (+16.1%), and unusual_volume screen confirmation create a compelling swing trade setup with defined risk management.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Trading halted: Outside trading window</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:44:58</td>
+          <td style="font-weight:600">NUGT</td>
+          <td style="color:#22c55e;font-weight:600">86.6</td>
+          <td>67</td>
+          <td style="color:#94a3b8">0.9x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="gap up ">gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="NUGT exhibits strong uptrend fundamentals (price above 20-day SMA, +100% 5-day return, +50% vs SPY outperformance) with bullish MACD confirmation and gap-up setup, though volume at 0.9x average is slightly below ideal institutional confirmation threshold.">NUGT exhibits strong uptrend fundamentals (price above 20-day SMA, +100% 5-day return, +50% vs SPY outperformance) with bullish MACD confirmation and gap-up setup, though volume at 0.9x average is slightly below ideal institutional confirmation threshold.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:44:55</td>
+          <td style="font-weight:600">SNDU</td>
+          <td style="color:#22c55e;font-weight:600">88.1</td>
+          <td>79</td>
+          <td style="color:#22c55e">2.5x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="unusual volume, momentum breakout, top gainers (4)">unusual volume, momentum breakout, top gainers (4)</td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong uptrend with 88.1 momentum score, 2.5x volume confirmation, bullish MACD, outperformance vs SPY, and multiple Finviz screen hits align perfectly with momentum trading criteria; RSI 78.6 is appropriately elevated for strong trend, and tight stop-losses (-5%/-3%) mechanically limit downside risk.">Strong uptrend with 88.1 momentum score, 2.5x volume confirmation, bullish MACD, outperformance vs SPY, and multiple Finviz screen hits align perfectly with momentum trading criteria; RSI 78.6 is appropriately elevated for strong trend, and tight stop-losses (-5%/-3%) mechanically limit downside risk.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:44:52</td>
+          <td style="font-weight:600">AEHR</td>
+          <td style="color:#22c55e;font-weight:600">90.1</td>
+          <td>74</td>
+          <td style="color:#22c55e">2.1x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="top gainers, high short interest, gap up ">top gainers, high short interest, gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (9/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Exceptional momentum setup with 90.1 score, RSI 73.6 in healthy range, 2.1x volume confirmation, multiple Finviz screens, bullish MACD, price above SMA, +100% 5-day return, and +50% relative outperformance—all textbook swing trade criteria with mechanical risk controls in place.">Exceptional momentum setup with 90.1 score, RSI 73.6 in healthy range, 2.1x volume confirmation, multiple Finviz screens, bullish MACD, price above SMA, +100% 5-day return, and +50% relative outperformance—all textbook swing trade criteria with mechanical risk controls in place.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:39:43</td>
+          <td style="font-weight:600">FRT</td>
+          <td style="color:#22c55e;font-weight:600">80.1</td>
+          <td>71</td>
+          <td style="color:#f59e0b">1.4x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="momentum breakout ">momentum breakout </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="FRT exhibits textbook momentum setup with 80.1 momentum score, bullish MACD crossover, price above 20-day SMA, elevated volume confirmation (1.4x), and outperformance vs SPY—ideal for 1-5 day swing entry with mechanical stops in place.">FRT exhibits textbook momentum setup with 80.1 momentum score, bullish MACD crossover, price above 20-day SMA, elevated volume confirmation (1.4x), and outperformance vs SPY—ideal for 1-5 day swing entry with mechanical stops in place.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:39:40</td>
+          <td style="font-weight:600">ESE</td>
+          <td style="color:#22c55e;font-weight:600">81.0</td>
+          <td>69</td>
+          <td style="color:#f59e0b">1.2x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="mid cap breakout ">mid cap breakout </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (81/100) with bullish MACD, price above 20-day SMA, elevated volume (1.2x), and market outperformance (+6.2% vs SPY) confirm sustained uptrend ideal for swing trading with tight stops in place.">Strong momentum score (81/100) with bullish MACD, price above 20-day SMA, elevated volume (1.2x), and market outperformance (+6.2% vs SPY) confirm sustained uptrend ideal for swing trading with tight stops in place.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:39:38</td>
+          <td style="font-weight:600">GDX</td>
+          <td style="color:#22c55e;font-weight:600">81.7</td>
+          <td>68</td>
+          <td style="color:#94a3b8">0.7x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="gap up ">gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (7/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum score (81.7), bullish MACD, price above SMA, and exceptional relative strength (+34.1%) confirm uptrend, though volume ratio of 0.7x is slightly below ideal threshold for institutional confirmation.">Strong momentum score (81.7), bullish MACD, price above SMA, and exceptional relative strength (+34.1%) confirm uptrend, though volume ratio of 0.7x is slightly below ideal threshold for institutional confirmation.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8;white-space:nowrap">15:39:35</td>
+          <td style="font-weight:600">ABVX</td>
+          <td style="color:#22c55e;font-weight:600">81.9</td>
+          <td>67</td>
+          <td style="color:#94a3b8">0.8x</td>
+          <td style="color:#22c55e">bull</td>
+          <td style="color:#22c55e">above</td>
+          <td style="font-size:11px;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="top gainers, gap up ">top gainers, gap up </td>
+          <td><span style="color:#22c55e">BULLISH</span> (8/10)</td>
+          <td style="font-size:11px;color:#94a3b8;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="Strong momentum fundamentals (81.9 score, +81.2% 5-day return, +50% vs SPY) with bullish MACD crossover and price above 20-day SMA confirmed by multiple Finviz screens, though volume ratio at 0.8x is slightly below ideal threshold for institutional conviction.">Strong momentum fundamentals (81.9 score, +81.2% 5-day return, +50% vs SPY) with bullish MACD crossover and price above 20-day SMA confirmed by multiple Finviz screens, though volume ratio at 0.8x is slightly below ideal threshold for institutional conviction.</td>
+          <td style="color:#94a3b8;font-size:12px">Risk rejected: Max positions reached (12/10)</td>
+        </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Bot Log</h2>
+    <div class="log-box">
+      <div class='log-line'>2026-05-01 15:45:24 [INFO] src.data_client: Cancelled order e78b1cb4-1977-47d4-94c1-d21b36ce992e</div>
+<div class='log-line'>2026-05-01 15:45:24 [WARNING] src.executor: Trailing stop placement deferred for CLOU: {"available":"0","code":40310000,"existing_qty":"38","held_for_orders":"38","message":"insufficient qty available for order (requested: 38, available: 0)","related_orders":["e78b1cb4-1977-47d4-94c1-d21b36ce992e"],"symbol":"CLOU"}</div>
+<div class='log-line'>2026-05-01 15:45:24 [INFO] src.data_client: Cancelled order 65c1ab45-001b-44de-9f8d-62a6ced57a9e</div>
+<div class='log-line'>2026-05-01 15:45:24 [WARNING] src.executor: Trailing stop placement deferred for CVBF: {"available":"0","code":40310000,"existing_qty":"907","held_for_orders":"907","message":"insufficient qty available for order (requested: 907, available: 0)","related_orders":["65c1ab45-001b-44de-9f8d-62a6ced57a9e"],"symbol":"CVBF"}</div>
+<div class='log-line'>2026-05-01 15:45:24 [INFO] src.data_client: Cancelled order 44feeb36-7a2c-43fb-9050-ee5f8ed2a098</div>
+<div class='log-line'>2026-05-01 15:45:24 [WARNING] src.executor: Trailing stop placement deferred for GDX: {"available":"0","code":40310000,"existing_qty":"53","held_for_orders":"53","message":"insufficient qty available for order (requested: 53, available: 0)","related_orders":["44feeb36-7a2c-43fb-9050-ee5f8ed2a098"],"symbol":"GDX"}</div>
+<div class='log-line'>2026-05-01 15:45:24 [INFO] src.data_client: Cancelled order 336907af-0765-4a04-a6cf-74e3565284ee</div>
+<div class='log-line'>2026-05-01 15:45:24 [WARNING] src.executor: Trailing stop placement deferred for GDXJ: {"available":"0","code":40310000,"existing_qty":"40","held_for_orders":"40","message":"insufficient qty available for order (requested: 40, available: 0)","related_orders":["336907af-0765-4a04-a6cf-74e3565284ee"],"symbol":"GDXJ"}</div>
+<div class='log-line'>2026-05-01 15:45:24 [INFO] src.data_client: Cancelled order e8dfbd0c-e7ec-4988-8e31-e3c5870f5842</div>
+<div class='log-line'>2026-05-01 15:45:24 [WARNING] src.executor: Trailing stop placement deferred for IAC: {"available":"0","code":40310000,"existing_qty":"413","held_for_orders":"413","message":"insufficient qty available for order (requested: 413, available: 0)","related_orders":["e8dfbd0c-e7ec-4988-8e31-e3c5870f5842"],"symbol":"IAC"}</div>
+<div class='log-line'>2026-05-01 15:45:25 [INFO] src.data_client: Cancelled order e51b897c-41bf-433b-bc0f-aade982cd927</div>
+<div class='log-line'>2026-05-01 15:45:25 [WARNING] src.executor: Trailing stop placement deferred for IHAK: {"available":"0","code":40310000,"existing_qty":"106","held_for_orders":"106","message":"insufficient qty available for order (requested: 106, available: 0)","related_orders":["e51b897c-41bf-433b-bc0f-aade982cd927"],"symbol":"IHAK"}</div>
+<div class='log-line'>2026-05-01 15:45:25 [INFO] src.data_client: Cancelled order 5fc223ea-bddf-45a9-8aaa-c3dffa70035b</div>
+<div class='log-line'>2026-05-01 15:45:25 [WARNING] src.executor: Trailing stop placement deferred for LNC: {"available":"0","code":40310000,"existing_qty":"502","held_for_orders":"502","message":"insufficient qty available for order (requested: 502, available: 0)","related_orders":["5fc223ea-bddf-45a9-8aaa-c3dffa70035b"],"symbol":"LNC"}</div>
+<div class='log-line'>2026-05-01 15:45:25 [INFO] src.data_client: Cancelled order cc7830a7-98ae-4408-ba35-5f418cf6df27</div>
+<div class='log-line'>2026-05-01 15:45:25 [WARNING] src.executor: Trailing stop placement deferred for TTE: {"available":"0","code":40310000,"existing_qty":"8","held_for_orders":"8","message":"insufficient qty available for order (requested: 8, available: 0)","related_orders":["cc7830a7-98ae-4408-ba35-5f418cf6df27"],"symbol":"TTE"}</div>
+<div class='log-line'>2026-05-01 15:45:25 [INFO] src.data_client: Cancelled order bcd1fd78-45cb-42b8-92b0-9d45c9f5b5eb</div>
+<div class='log-line'>2026-05-01 15:45:25 [WARNING] src.executor: Trailing stop placement deferred for UUP: {"available":"0","code":40310000,"existing_qty":"329","held_for_orders":"329","message":"insufficient qty available for order (requested: 329, available: 0)","related_orders":["bcd1fd78-45cb-42b8-92b0-9d45c9f5b5eb"],"symbol":"UUP"}</div>
+<div class='log-line'>2026-05-01 15:45:25 [INFO] src.data_client: Cancelled order b5f6266e-0087-4572-aec1-ef061bc183be</div>
+<div class='log-line'>2026-05-01 15:45:25 [WARNING] src.executor: Trailing stop placement deferred for XOVR: {"available":"0","code":40310000,"existing_qty":"67","held_for_orders":"67","message":"insufficient qty available for order (requested: 67, available: 0)","related_orders":["b5f6266e-0087-4572-aec1-ef061bc183be"],"symbol":"XOVR"}</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Auto-refreshes every 30 seconds | Auto-Trader Bot v1.0 | Paper Trading Mode
+  </div>
+  <script>
+    // Check heartbeat staleness — turn status dot yellow (>2min) or red (>10min)
+    (function() {
+      const updated = new Date("2026-05-01 15:45:25");
+      function check() {
+        const age = (Date.now() - updated.getTime()) / 1000;
+        const dot = document.querySelector('.status-dot');
+        const label = document.querySelector('.status-label');
+        if (age > 600) {
+          dot.style.background = '#ef4444';
+          if (label) label.textContent = 'STALE — no update in ' + Math.round(age/60) + ' min';
+        } else if (age > 120) {
+          dot.style.background = '#f59e0b';
+          if (label) label.textContent = 'Delayed — last update ' + Math.round(age/60) + ' min ago';
+        }
+      }
+      setInterval(check, 10000);
+      check();
+    })();
+  </script>
+</body>
+</html>
